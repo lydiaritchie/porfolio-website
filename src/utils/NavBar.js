@@ -2,8 +2,8 @@ import React from "react";
 
 export function NavBar(){
     return (
-        <nav class="navbar">
-            <ul class="navbar-nav">
+        <nav class="navbar ">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
