@@ -1,6 +1,7 @@
 import React from "react";
 import { NavBar } from "../utils/NavBar";
 
+
 export function Home(){
     return (
         <div>
