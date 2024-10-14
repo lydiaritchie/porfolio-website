@@ -6,7 +6,7 @@ export function Portfolio() {
   return (
     <div>
       <header>{<NavBar />}</header>
-      <h2>Portfolio</h2>
+        <h5 className="text-center py-3">Portfolio</h5>
     </div>
   );
 }

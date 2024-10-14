@@ -6,7 +6,7 @@ export function Home(){
     return (
         <div>
             <header>{<NavBar/>}</header>
-            <h2>Home</h2>
+            <h3 className="text-center py-3">Lydia Ritchie</h3>
         </div>
     )
 };

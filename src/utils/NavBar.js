@@ -32,9 +32,9 @@ export function NavBar() {
 
 
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light d-sm-none">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light d-sm-none d-flex col px-4 py-2">
         <a class="navbar-brand" href="/">
-          Navbar
+          Lydia Ritchie
         </a>
         <button
           class="navbar-toggler"
@@ -44,6 +44,8 @@ export function NavBar() {
           aria-controls="smallNavBar"
           aria-expanded="true"
           aria-label="Toggle navigation"
+          
+
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -71,16 +73,6 @@ export function NavBar() {
             </a>
           </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </nav>
 

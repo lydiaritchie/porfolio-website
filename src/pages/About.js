@@ -5,7 +5,7 @@ export function About(){
     return (
         <div>
             <header>{<NavBar/>}</header>
-            <h2>About</h2>
+            <h5 className="text-center py-3">About</h5>
         </div>
     )
 };

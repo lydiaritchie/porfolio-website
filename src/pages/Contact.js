@@ -5,7 +5,7 @@ export function Contact(){
     return (
         <div>
             <header>{<NavBar/>}</header>
-            <h2>Contact</h2>
+            <h5 className="text-center py-3">Contact</h5>
         </div>
     )
 };
