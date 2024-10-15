@@ -1,12 +1,16 @@
 import React from "react";
 import { NavBar } from "../utils/NavBar";
+import {ReactComponent as NameLogo} from "../images/lydia-ritchie-name-logo.svg"
 
 
 export function Home(){
     return (
         <div>
             <header>{<NavBar/>}</header>
-            <h3 className="text-center py-3">Lydia Ritchie</h3>
+            <div className="py-3 d-flex row justify-content-center ">
+            <NameLogo className="w-25"/>
+                </div>
+                
         </div>
     )
 };
