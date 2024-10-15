@@ -8,7 +8,7 @@ export function Home(){
         <div>
             <header>{<NavBar/>}</header>
             <div className="py-3 d-flex row justify-content-center ">
-            <NameLogo className="w-25"/>
+            <NameLogo className="w-75"/>
                 </div>
                 
         </div>
