@@ -1,41 +1,38 @@
 import React from "react";
 import { ReactComponent as Initials } from "../images/initials.svg";
-import { ReactComponent as FullName} from "../images/lydia-ritchie-name-logo.svg";
+import { ReactComponent as FullName } from "../images/lydia-ritchie-name-logo.svg";
 
 export function NavBar() {
   return (
     <div>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light d-none d-sm-block">
-        <ul class="navbar-nav justify-content-center ">
-          <li class="nav-item px-4">
-            <a class="nav-link" href="/">
+      <nav className="navbar navbar-expand-sm navbar-light bg-light d-none d-sm-block">
+        <ul className="navbar-nav justify-content-center ">
+          <li className="nav-item px-4">
+            <a className="nav-link" href="/">
               Home
             </a>
           </li>
-          <li class="nav-item px-4">
-            <a class="nav-link" href="/portfolio">
+          <li className="nav-item px-4">
+            <a className="nav-link" href="/portfolio">
               Portfolio
             </a>
           </li>
-          <li class="nav-item px-4">
-            <a class="nav-link" href="/about">
+          <li className="nav-item px-4">
+            <a className="nav-link" href="/about">
               About
             </a>
           </li>
-          <li class="nav-item px-4">
-            <a class="nav-link" href="/contact">
+          <li className="nav-item px-4">
+            <a className="nav-link" href="/contact">
               Contact
             </a>
           </li>
         </ul>
       </nav>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light d-sm-none d-flex col px-4">
-        <a class="navbar-brand navbar-initials" href="/">
-          <FullName />
-        </a>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light d-sm-none d-flex col px-4">
         <a
-          class="navbar-toggler"
+          className="py-2"
           type="button"
           data-toggle="collapse"
           data-target="#smallNavBar"
@@ -43,28 +40,28 @@ export function NavBar() {
           aria-expanded="true"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </a>
 
-        <div class="collapse navbar-collapse" id="smallNavBar">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">
+        <div className="collapse navbar-collapse" id="smallNavBar">
+          <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li className="nav-item active">
+              <a className="nav-link" href="/">
                 Home
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/portfolio">
+            <li className="nav-item active">
+              <a className="nav-link" href="/portfolio">
                 Portfolio
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/about">
+            <li className="nav-item active">
+              <a className="nav-link" href="/about">
                 About
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/contact">
+            <li className="nav-item active">
+              <a className="nav-link" href="/contact">
                 Contact
               </a>
             </li>

@@ -3,3 +3,7 @@
   min-height: 70px;
   display: inline-block;
 }
+
+.navbar-icon {
+  outline-width: 0;
+}
