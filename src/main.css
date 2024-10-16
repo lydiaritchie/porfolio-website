@@ -7,3 +7,9 @@
 .navbar-icon {
   outline-width: 0;
 }
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure container takes up full viewport height */
+}

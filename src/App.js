@@ -8,13 +8,13 @@ import { Portfolio } from "./pages/Portfolio";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { NavBar } from "./utils/NavBar";
-import linesBackground from "./images/black-lines.svg";
+import { Footer } from "./utils/Footer";
 
 function App() {
   return (
     <div>
       <header><NavBar /></header>
-      <div>
+      <div className="container-main">
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -23,9 +23,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Router>
+        <footer className=""><Footer /></footer>
       </div>
-
-      <footer className="">footer</footer>
     </div>
   );
 }
