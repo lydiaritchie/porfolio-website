@@ -13,3 +13,14 @@
   flex-direction: column;
   min-height: 100vh; /* Ensure container takes up full viewport height */
 }
+
+.contact-btn {
+  border-radius: 30px;
+  border-color: black;
+  margin: 10px 0 10px 0;
+}
+
+.contact-btn:hover {
+  background-color: aliceblue;
+  border-color: black;
+}
