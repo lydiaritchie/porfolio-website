@@ -19,3 +19,8 @@
   border-color: black;
   margin: 10px 0 10px 0;
 }
+
+.contact-container {
+  max-width: 400px;
+
+}

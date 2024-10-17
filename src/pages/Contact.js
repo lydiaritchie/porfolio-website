@@ -27,9 +27,9 @@ export function Contact() {
 
   return (
     <div>
-      <h1 className="text-center py-3">Contact</h1>
+      <h1 className="text-center py-2" >Contact</h1>
       <div className="d-flex flex-wrap justify-content-center">
-        <div className="row my-3 w-75">
+        <div className="row contact-container">
           <a
             className="btn contact-btn"
             href="https://www.linkedin.com/in/lydia-g-ritchie/"
@@ -51,7 +51,7 @@ export function Contact() {
             href="https://github.com/lydiaritchie"
             onMouseEnter={() => setGitHubColor(getRandomColor())}
             onMouseLeave={() => setGitHubColor("transparent")}
-            style={{ backgroundColor: gitHubColor }}
+            style={{ backgroundColor: gitHubColor}}
           >
             <img
               className="mx-2"
