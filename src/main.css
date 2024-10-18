@@ -22,5 +22,17 @@
 
 .contact-container {
   max-width: 400px;
+}
 
+@media (max-width: 450px) {
+  .contact-btn {
+    word-wrap: break-word;
+  }
+
+  .contact-container{
+
+    max-width: 90%;
+    word-wrap: break-word;
+
+  }
 }

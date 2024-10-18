@@ -7,14 +7,14 @@ import linesBackground from "../images/black-lines.svg";
 export function Home() {
   return (
     <div>
-      <div className="py-3 d-flex row justify-content-center ">
+      <div className="py-3 d-flex row justify-content-center">
         <LongNameLogo
           className="w-75  d-none d-sm-block"
           style={{ backgroundColor: "" }}
         />
         <NameLogo className="w-75 d-sm-none" style={{ backgroundColor: "" }} />
 
-        <h4 className="text-center" style={{ fontSize: "20px" }}>
+        <h4 className="text-center mt-3" style={{ fontSize: "20px" }}>
           Software Engineer
         </h4>
         <h4 className="text-center" style={{ fontSize: "20px" }}>
