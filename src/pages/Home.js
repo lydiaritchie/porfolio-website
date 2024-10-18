@@ -2,32 +2,31 @@ import React, { useState } from "react";
 import { NavBar } from "../utils/NavBar";
 import { ReactComponent as NameLogo } from "../images/lydia-ritchie-name-logo.svg";
 import { ReactComponent as LongNameLogo } from "../images/lydia-ritchie-horizontal.svg";
-import linesBackground from "../images/black-lines.svg";
 import flowerMug from "../images/flowerMug.png";
+import { brew } from "../utils/api";
 
 export function Home() {
-  const initialTeapot = "";
-  const [teapot, setTeapot] = useState(initialTeapot);
+  const [brewState, setBrewState] = useState("");
+  const [brewError, setBrewError] =  useState("");
 
-  //when clicked, throws 418
-  async function Teapot() {
-    if (teapot === "") {
-      setTeapot(
-        <div className="alert alert-danger" style={{width: "100px", padding: "5px"}}>
-          <h5>Error: 418</h5>
-          I'm a teapot
-        </div>
-      );
-    } else {
-      setTeapot("");
+  async function handleTeapot(){
+    try{
+      const fetchedBrewResult = await brew("teapot");
+      const brewResult = JSON.stringify(fetchedBrewResult);
+      setBrewState(brewResult);
+      console.log(brewResult);
+    } catch (error) {
+      console.log(error);
+      setBrewError(`${error.status}: ${error.message}`);
     }
   }
+
 
   return (
     <div>
       <div className="py-3 d-flex row justify-content-center">
         <LongNameLogo
-         className="w-75  d-none d-sm-block"
+          className="w-75  d-none d-sm-block"
           style={{ backgroundColor: "" }}
         />
         <NameLogo className="w-75 d-sm-none" style={{ backgroundColor: "" }} />
@@ -38,8 +37,12 @@ export function Home() {
       </div>
 
       <div className="justify-self-center">
-        <img style={{ width: "120px" }} src={flowerMug} onClick={Teapot} />
-        <div>{teapot}</div>
+        <img style={{ width: "120px" }} src={flowerMug} onClick={handleTeapot} />
+
+      </div>
+      <div className="alert alert-danger">
+        {brewError}
+        {brewState}
       </div>
     </div>
   );
