@@ -10,6 +10,10 @@ export function Home() {
   const [brewError, setBrewError] =  useState("");
 
   async function handleTeapot(){
+    if(brewError !== ""){
+      setBrewError("");
+      return;
+    }
     try{
       const fetchedBrewResult = await brew("teapot");
       const brewResult = JSON.stringify(fetchedBrewResult);
@@ -40,10 +44,7 @@ export function Home() {
         <img style={{ width: "120px" }} src={flowerMug} onClick={handleTeapot} />
 
       </div>
-      <div className="alert alert-danger">
-        {brewError}
-        {brewState}
-      </div>
+      {brewError ? (<div className="alert alert-danger">{brewError}</div>) : (<div></div>)}
     </div>
   );
 }
