@@ -27,7 +27,7 @@ export function Contact() {
 
   return (
     <div>
-      <h1 className="text-center" style={{marginTop: "15px"}} >Contact</h1>
+      <h1 className="text-center fst-italic" style={{marginTop: "15px"}} >Contact</h1>
       <div className="d-flex flex-wrap justify-content-center">
         <div className="row contact-container">
           <a

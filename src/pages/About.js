@@ -4,7 +4,7 @@ import { NavBar } from "../utils/NavBar";
 export function About(){
     return (
         <div>
-            <h5 className="text-center py-3">About</h5>
+            <h1 className="text-center fst-italic" style={{marginTop: "15px"}} >About</h1>
             
         </div>
     )
