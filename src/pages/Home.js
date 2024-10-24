@@ -8,17 +8,14 @@ import { brew } from "../utils/api";
 
 export function Home() {
   const [brewState, setBrewState] = useState("");
-  const [brewError, setBrewError] =  useState("");
+  const [brewError, setBrewError] = useState("");
 
-
-
-
-  async function handleTeapot(){
-    if(brewError !== ""){
+  async function handleTeapot() {
+    if (brewError !== "") {
       setBrewError("");
       return;
     }
-    try{
+    try {
       const fetchedBrewResult = await brew("teapot");
       const brewResult = JSON.stringify(fetchedBrewResult);
       setBrewState(brewResult);
@@ -29,7 +26,6 @@ export function Home() {
     }
   }
 
-
   return (
     <div>
       <div className="py-3 d-flex row justify-content-center">
@@ -37,7 +33,10 @@ export function Home() {
           className="d-none d-sm-block"
           style={{ backgroundColor: "", width: "500px" }}
         />
-        <NameLogo className="d-sm-none" style={{ backgroundColor: "", width: "300px" }} />
+        <NameLogo
+          className="d-sm-none"
+          style={{ backgroundColor: "", width: "300px" }}
+        />
 
         <h4 className="text-center mt-3" style={{ fontSize: "20px" }}>
           Software Engineer, Designer, Artist
@@ -48,12 +47,15 @@ export function Home() {
         <img style={{ width: "120px" }} onClick={handleTeapot} />
       </div>
 
-    <div className="justify-content-center" style={{backgroundColor: ""}}>
-      <DeskComponent style={{width: ""}}/>
-    </div>
+      <div className="w-100" style={{ backgroundColor: "" }}>
+        <DeskComponent className="" />
+      </div>
 
-
-      {brewError ? (<div className="alert alert-danger">{brewError}</div>) : (<div></div>)}
+      {brewError ? (
+        <div className="alert alert-danger">{brewError}</div>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 }
