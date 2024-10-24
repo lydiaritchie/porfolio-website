@@ -48,8 +48,8 @@ export function Home() {
         <img style={{ width: "120px" }} onClick={handleTeapot} />
       </div>
 
-    <div className=" justify-content-center" style={{backgroundColor: ""}}>
-      <DeskComponent style={{width: "100%"}}/>
+    <div className="justify-content-center" style={{backgroundColor: ""}}>
+      <DeskComponent style={{width: ""}}/>
     </div>
 
 
