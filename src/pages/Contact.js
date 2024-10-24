@@ -4,22 +4,9 @@ import linkedInIcon from "../images/linkedIn-icon.svg";
 import githubIcon from "../images/github-icon.svg";
 import emailIcon from "../images/email-bg-icon.svg";
 import instaIcon from "../images/insta-icon.svg";
+import { getRandomColor } from "../utils/randomColor";
 
 export function Contact() {
-  const colors = [
-    "#D5F2E3",
-    "#FCEADE",
-    "#A4BFEB",
-    "#AF9BB6",
-    "#CDFFF9",
-    "#FADF63",
-    "#A3BBAD",
-    "#FCAA67",
-    "#AEADF0",
-    "#EBB9DF",
-  ];
-  const getRandomColor = () =>
-    colors[Math.floor(Math.random() * colors.length)];
   const [linkedInColor, setLinkedInColor] = useState("transparent");
   const [gitHubColor, setGitHubColor] = useState("transparent");
   const [emailColor, setEmailColor] = useState("transparent");
