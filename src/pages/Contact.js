@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import linkedInIcon from "../images/linkedIn-icon.svg";
-import githubIcon from "../images/github-icon.svg";
-import emailIcon from "../images/email-bg-icon.svg";
-import instaIcon from "../images/insta-icon.svg";
+import linkedInIcon from "../graphics/linkedIn-icon.svg";
+import githubIcon from "../graphics/github-icon.svg";
+import emailIcon from "../graphics/email-bg-icon.svg";
+import instaIcon from "../graphics/insta-icon.svg";
 import { getRandomColor } from "../utils/randomColor";
 
 export function Contact() {

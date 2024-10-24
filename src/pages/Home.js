@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { ReactComponent as NameLogo } from "../images/lydia-ritchie-name-logo.svg";
-import { ReactComponent as LongNameLogo } from "../images/lydia-ritchie-horizontal.svg";
-import {ReactComponent as DeskPerspective} from "../images/desk-perspective.svg";
-import flowerMug from "../images/flowerMug.png";
+import { ReactComponent as NameLogo } from "../graphics/lydia-ritchie-name-logo.svg";
+import { ReactComponent as LongNameLogo } from "../graphics/lydia-ritchie-horizontal.svg";
+import {ReactComponent as DeskPerspective} from "../graphics/desk-perspective-screenshot.svg";
+import flowerMug from "../graphics/flowerMug.png";
 import { getRandomColor } from "../utils/randomColor";
 import { brew } from "../utils/api";
 

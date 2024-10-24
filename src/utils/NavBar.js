@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as Initials } from "../images/initials.svg";
-import { ReactComponent as FullName } from "../images/lydia-ritchie-name-logo.svg";
+import { ReactComponent as Initials } from "../graphics/initials.svg";
+import { ReactComponent as FullName } from "../graphics/lydia-ritchie-name-logo.svg";
 
 export function NavBar() {
   return (
