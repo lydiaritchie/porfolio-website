@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { ReactComponent as NameLogo } from "../graphics/lydia-ritchie-name-logo.svg";
-import { ReactComponent as LongNameLogo } from "../graphics/lydia-ritchie-horizontal.svg";
+import React, { useState } from "react";
+import { NavBar } from "../utils/NavBar";
 import DeskComponent from "../graphics/DeskComponent";
-import flowerMug from "../graphics/flowerMug.png";
-import { getRandomColor } from "../utils/randomColor";
 import { brew } from "../utils/api";
 
 export function Home() {
@@ -27,27 +24,14 @@ export function Home() {
   }
 
   return (
-    <div>
-      <div className="py-3 d-flex row justify-content-center">
-        <LongNameLogo
-          className="d-none d-sm-block"
-          style={{ backgroundColor: "", width: "500px" }}
-        />
-        <NameLogo
-          className="d-sm-none"
-          style={{ backgroundColor: "", width: "300px" }}
-        />
-
-        <h4 className="text-center mt-3" style={{ fontSize: "20px" }}>
-          Software Engineer, Designer, Artist
-        </h4>
-      </div>
+    <div style={{ backgroundColor: "#92a7b2" }}>
+       <header><NavBar /></header>
 
       <div className="justify-self-center">
         <img style={{ width: "120px" }} onClick={handleTeapot} />
       </div>
 
-      <div className="w-100" style={{ backgroundColor: "" }}>
+      <div className="w-100" style={{ backgroundColor: "#92a7b2" }}>
         <DeskComponent className="" />
       </div>
 

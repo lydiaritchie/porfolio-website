@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import linkedInIcon from "../graphics/linkedIn-icon.svg";
-import githubIcon from "../graphics/github-icon.svg";
-import emailIcon from "../graphics/email-bg-icon.svg";
-import instaIcon from "../graphics/insta-icon.svg";
+import linkedInIcon from "../graphics/icons/linkedIn-icon.svg";
+import githubIcon from "../graphics/icons/github-icon.svg";
+import emailIcon from "../graphics/icons/email-bg-icon.svg";
+import instaIcon from "../graphics/icons/insta-icon.svg";
 import { getRandomColor } from "../utils/randomColor";
+import { NavBar } from "../utils/NavBar";
 
 export function Contact() {
   const [linkedInColor, setLinkedInColor] = useState("transparent");
@@ -14,6 +15,7 @@ export function Contact() {
 
   return (
     <div>
+         <header><NavBar /></header>
       <h1 className="text-center fst-italic" style={{marginTop: "15px"}} >Contact</h1>
       <div className="d-flex flex-wrap justify-content-center">
         <div className="row contact-container">
