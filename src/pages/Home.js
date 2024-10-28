@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavBar } from "../utils/NavBar";
 import DeskComponent from "../graphics/DeskComponent";
 import { brew } from "../utils/api";
+import lydiaRitchieVertical from "../graphics/personal-branding/lydia-ritchie-vertical.svg"
 
 export function Home() {
   const [brewState, setBrewState] = useState("");
@@ -27,11 +28,9 @@ export function Home() {
     <div style={{ backgroundColor: "#92a7b2" }}>
        <header><NavBar /></header>
 
-      <div className="justify-self-center">
-        <img style={{ width: "120px" }} onClick={handleTeapot} />
-      </div>
+      
 
-      <div className="w-100" style={{ backgroundColor: "#92a7b2" }}>
+      <div className="desk-svg">
         <DeskComponent className="" />
       </div>
 
@@ -40,6 +39,10 @@ export function Home() {
       ) : (
         <div></div>
       )}
+      
+      <div className="justify-self-center">
+        <img style={{ width: "120px" }} onClick={handleTeapot} />
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import vscodeScreenshot from "./home-graphics/vscode-screenshot.png";
 import leafVase from "./pots/leaf-vase.png";
 import flowerMug from "./pots/flower-mug.png";
@@ -7,8 +7,8 @@ import keyboard from "./home-graphics/keyboard.png";
 
 const DeskComponent = () => (
   <svg
-    id="Layer_3"
-    data-name="Layer 3"
+    id="DeskComponent"
+    data-name="DeskComponent"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 8244.85 4197.96"
   >
@@ -17,7 +17,7 @@ const DeskComponent = () => (
     <image
       width="2149"
       height="1737"
-      transform="translate(2130 80) scale(.48)"
+      transform="translate(3400 600) scale(.78)"
       href={vscodeScreenshot}
     />
 
@@ -44,18 +44,18 @@ const DeskComponent = () => (
     <image
       width="2149"
       height="1737"
-      transform="translate(1100 400) scale(.4)"
+      transform="translate(300 1550) scale(.4)"
       href={leafVase}
     />
 
     <image
       width="2149"
       height="1737"
-      transform="translate(3990 1050) scale(.18)"
+      transform="translate(5980 2270) scale(.18)"
       href={flowerMug}
     />
 
-    <image href={keyboard} />
+    <image transform="translate(3300 2300) scale(0.9)" href={keyboard} />
   </svg>
 );
 

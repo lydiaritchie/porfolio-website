@@ -36,3 +36,12 @@
 
   }
 }
+
+@media (max-width: 575px) {
+  .desk-svg {
+    transform: scale(1.5);
+    height: auto;
+    max-width: 100vw; /* Prevents overflow on mobile */
+    overflow: hidden;
+  }
+}
