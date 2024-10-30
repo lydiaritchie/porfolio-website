@@ -30,18 +30,14 @@ export function Home() {
         <NavBar style={{ backgroundColor: "lightblue" }} />
       </header>
 
-      <div className="">
-
+      <div>
         <div className="d-flex justify-content-center">
-          <LydiaRitchieVertical
-            className="w-50 d-sm-none"
-            style={{ backgroundColor: "" }}
-          />
+          <LydiaRitchieVertical className="w-50 d-sm-none" />
         </div>
 
-        <div className="">
-          <div className="svg-container" style={{ backgroundColor: "" }}>
-            <DeskComponent className="desk-svg" />
+        <div className="desk-container">
+          <div className="desk">
+            <DeskComponent />
           </div>
         </div>
 

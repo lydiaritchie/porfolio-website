@@ -17,39 +17,57 @@
 .contact-btn {
   border-radius: 30px;
   border-color: black;
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
+  word-wrap: break-word;
 }
-
 
 .contact-container {
-  max-width: 400px;
+  max-width: 90%;
 }
 
-@media (max-width: 450px) {
-  .contact-btn {
-    word-wrap: break-word;
-  }
-
-  .contact-container{
-
-    max-width: 90%;
-    word-wrap: break-word;
-
-  }
-}
-
-.svg-container {
+.desk-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   width: 100vw;
 }
 
-@media (max-width: 375px) {
-  .desk-svg {
-    transform: scale(1.9);
-    transform-origin: top center;
-    height: auto;
-    width: 100vw;
-    margin-top: 20px;
-    overflow: hidden;
+.desk {
+  transform: translateX(-25px) scale(2); /* Adjust for mobile zoom */
+  transform-origin: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 450px) {
+  .contact-btn {
+    font-size: small;
+  }
+
+  .contact-container {
+    max-width: 300px;
   }
 }
+
+@media (min-width: 450px) {
+  .desk {
+    transform: translateX(-30px) scale(2); /* Adjust for mobile zoom */
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+
+  .green-vase {
+    transform: translateX(2550px) translateY(1570px);
+  }
+
+  .leaf-vase {
+    transform: translateX(2900px) translateY(1200px) scale(0.35);
+  }
+
+
+}
+
+
