@@ -9,8 +9,31 @@ import nemo from "./home-graphics/nemo-skewed-screenshot.png";
 import openScreenshot from "./home-graphics/open-skewed-screenshot.png";
 import teapot from "./home-graphics/teapot.png";
 import flowers from "./home-graphics/flowers.png";
+import { brew } from "../utils/api";
 
-const DeskComponent = () => (
+
+function DeskComponent() {
+  const [brewState, setBrewState] = useState("");
+  const [brewError, setBrewError] = useState("");
+
+  async function handleTeapot() {
+    if (brewError !== "") {
+      setBrewError("");
+      return;
+    }
+    try {
+      const fetchedBrewResult = await brew("teapot");
+      const brewResult = JSON.stringify(fetchedBrewResult);
+      setBrewState(brewResult);
+      console.log(brewResult);
+    } catch (error) {
+      console.log(error);
+      setBrewError(`${error.status}: ${error.message}`);
+    }
+  }
+
+
+return (
   <svg
     id="DeskComponent"
     data-name="DeskComponent"
@@ -73,7 +96,9 @@ const DeskComponent = () => (
 
     <image transform="translate(5300 2550) scale(.30)" href={flowerMug} />
 
-    <image transform="translate(5650 2250) scale(.75)" href={teapot} />
+    <a onClick={handleTeapot}>
+      <image transform="translate(5650 2250) scale(.75)" href={teapot} />
+    </a>
 
     <path
       fill=""
@@ -84,5 +109,10 @@ const DeskComponent = () => (
     <image transform="translate(3220 2270) scale(0.945)" href={keyboard} />
   </svg>
 );
+
+
+
+} 
+
 
 export default DeskComponent;

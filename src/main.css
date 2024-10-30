@@ -45,15 +45,8 @@
   height: auto;
 }
 
-/* Custom styles for the navbar */
-.navbar {
-}
 
 @media (min-width: 300px) {
-  .contact-btn {
-
-  }
-
   .contact-container {
     max-width: 250px;
   }

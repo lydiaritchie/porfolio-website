@@ -1,6 +1,6 @@
 import React from "react";
 
-export function NavBar() {
+export function NavBar({bgColor}) {
   return (
     <div>
       <nav className="navbar navbar-expand-sm navbar-light d-none d-sm-block">
@@ -30,7 +30,7 @@ export function NavBar() {
 
       <nav
         className="navbar navbar-expand-lg navbar-light d-sm-none d-flex col px-2"
-        style={{ backgroundColor: "#8baac2"}}
+        style={{ backgroundColor: bgColor}}
       >
         <a
           className="py-2"
