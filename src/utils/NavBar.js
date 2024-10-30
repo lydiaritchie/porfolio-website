@@ -3,7 +3,7 @@ import React from "react";
 export function NavBar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-sm navbar-light bg-light d-none d-sm-block" s>
+      <nav className="navbar navbar-expand-sm navbar-light d-none d-sm-block">
         <ul className="navbar-nav justify-content-center ">
           <li className="nav-item px-4">
             <a className="nav-link" href="/">
@@ -28,7 +28,10 @@ export function NavBar() {
         </ul>
       </nav>
 
-      <nav className="navbar navbar-expand-lg navbar-light bg-light d-sm-none d-flex col px-4">
+      <nav
+        className="navbar navbar-expand-lg navbar-light d-sm-none d-flex col px-2"
+        style={{ backgroundColor: "#8baac2"}}
+      >
         <a
           className="py-2"
           type="button"

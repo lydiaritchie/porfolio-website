@@ -27,16 +27,22 @@ export function Home() {
   return (
     <div>
       <header>
-        <NavBar style={{ backgroundColor: "lightblue" }} />
+        <NavBar />
       </header>
 
-      <div>
-        <div className="d-flex justify-content-center">
-          <LydiaRitchieVertical className="w-50 d-sm-none" />
+      <div className="main-container" style={{ backgroundColor: ""}}>
+        <div
+          className="d-flex justify-content-center"
+          style={{ backgroundColor: "" }}
+        >
+          <LydiaRitchieVertical
+            className="w-75 d-sm-none"
+            style={{ paddingTop: "10px" }}
+          />
         </div>
 
         <div className="desk-container">
-          <div className="desk">
+          <div className="desk" style={{ backgroundColor: "" }}>
             <DeskComponent />
           </div>
         </div>
