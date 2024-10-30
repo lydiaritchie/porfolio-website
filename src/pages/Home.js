@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavBar } from "../utils/NavBar";
 import DeskComponent from "../graphics/DeskComponent";
 import { brew } from "../utils/api";
-import lydiaRitchieVertical from "../graphics/personal-branding/lydia-ritchie-vertical.svg"
+import { ReactComponent as LydiaRitchieVertical } from "../graphics/personal-branding/lydia-ritchie-vertical.svg";
 
 export function Home() {
   const [brewState, setBrewState] = useState("");
@@ -25,23 +25,35 @@ export function Home() {
   }
 
   return (
-    <div style={{ backgroundColor: "#92a7b2" }}>
-       <header><NavBar /></header>
+    <div>
+      <header>
+        <NavBar style={{ backgroundColor: "lightblue" }} />
+      </header>
 
-      
+      <div className="">
 
-      <div className="desk-svg">
-        <DeskComponent className="" />
-      </div>
+        <div className="d-flex justify-content-center">
+          <LydiaRitchieVertical
+            className="w-50 d-sm-none"
+            style={{ backgroundColor: "" }}
+          />
+        </div>
 
-      {brewError ? (
-        <div className="alert alert-danger">{brewError}</div>
-      ) : (
-        <div></div>
-      )}
-      
-      <div className="justify-self-center">
-        <img style={{ width: "120px" }} onClick={handleTeapot} />
+        <div className="">
+          <div className="svg-container" style={{ backgroundColor: "" }}>
+            <DeskComponent className="desk-svg" />
+          </div>
+        </div>
+
+        {brewError ? (
+          <div className="alert alert-danger">{brewError}</div>
+        ) : (
+          <div></div>
+        )}
+
+        <div className="justify-self-center">
+          <img style={{ width: "120px" }} onClick={handleTeapot} />
+        </div>
       </div>
     </div>
   );

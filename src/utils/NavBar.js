@@ -3,7 +3,7 @@ import React from "react";
 export function NavBar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-sm navbar-light bg-light d-none d-sm-block">
+      <nav className="navbar navbar-expand-sm navbar-light bg-light d-none d-sm-block" s>
         <ul className="navbar-nav justify-content-center ">
           <li className="nav-item px-4">
             <a className="nav-link" href="/">
