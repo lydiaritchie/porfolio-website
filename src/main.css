@@ -45,10 +45,6 @@
   height: auto;
 }
 
-.teapot image {
-  transition: filter 0.2s ease;
-}
-
 .teapot:hover image {
   filter: brightness(0.5);
 }
