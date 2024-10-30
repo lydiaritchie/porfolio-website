@@ -48,7 +48,7 @@ function DeskComponent() {
 
       {brewError ? (
         <image
-          transform="translate(3500 1250) scale(0.63)"
+          transform="translate(3600 1550) scale(1)"
           href={teapotError}
         />
       ) : (

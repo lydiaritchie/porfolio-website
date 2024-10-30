@@ -3,8 +3,10 @@ import { NavBar } from "../utils/NavBar";
 import DeskComponent from "../graphics/DeskComponent";
 import { brew } from "../utils/api";
 import { ReactComponent as LydiaRitchieVertical } from "../graphics/personal-branding/lydia-ritchie-vertical.svg";
+import { ReactComponent as LydiaRitchieHorizontal } from "../graphics/personal-branding/lydia-ritchie-horizontal.svg";
 
 export function Home() {
+
   return (
     <div>
       <header>
@@ -13,9 +15,9 @@ export function Home() {
 
       <div className="main-container">
         <div className="d-flex justify-content-center">
-          <LydiaRitchieVertical
-            className="w-75 d-sm-none"
-            style={{ paddingTop: "10px" }}
+          <LydiaRitchieHorizontal
+            className="d-sm-none"
+            style={{ width: "90%" }}
           />
         </div>
 

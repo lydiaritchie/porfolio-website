@@ -39,7 +39,7 @@
 .desk {
   transform: translateX(-30px) scale(2); /* Adjust for mobile zoom */
   transform-origin: top center;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
   margin-top: -25px;
   width: 100%;
   height: auto;
