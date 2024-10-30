@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState} from "react";
 import vscodeScreenshot from "./home-graphics/small-vscode.png";
 import leafVase from "./pots/leaf-vase.png";
 import flowerMug from "./pots/flower-mug.png";
@@ -10,6 +10,7 @@ import openScreenshot from "./home-graphics/open-skewed-screenshot.png";
 import teapot from "./home-graphics/teapot.png";
 import flowers from "./home-graphics/flowers.png";
 import { brew } from "../utils/api";
+import teapotError from "../graphics/home-graphics/418-error-msg.png";
 
 function DeskComponent() {
   const [brewState, setBrewState] = useState("");
@@ -24,13 +25,12 @@ function DeskComponent() {
       const fetchedBrewResult = await brew("teapot");
       const brewResult = JSON.stringify(fetchedBrewResult);
       setBrewState(brewResult);
-      console.log(brewResult);
+      console.log(brewState);
     } catch (error) {
       console.log(error);
       setBrewError(`${error.status}: ${error.message}`);
     }
   }
-
   return (
     <svg
       id="DeskComponent"
@@ -45,6 +45,16 @@ function DeskComponent() {
         transform="translate(3450 570) scale(.769)"
         href={vscodeScreenshot}
       />
+
+      {brewError ? (
+        <image
+          transform="translate(3500 1250) scale(0.63)"
+          href={teapotError}
+        />
+      ) : (
+        <div></div>
+      )}
+
       <image transform="translate(4920 1230) scale(0.59)" href={nemo} />
       <image transform="translate(4600 345) scale(0.6)" href={openScreenshot} />
 
@@ -94,7 +104,7 @@ function DeskComponent() {
 
       <image transform="translate(5300 2550) scale(.30)" href={flowerMug} />
 
-      <a onClick={handleTeapot}>
+      <a className="teapot" onClick={handleTeapot}>
         <image transform="translate(5650 2250) scale(.75)" href={teapot} />
       </a>
 
