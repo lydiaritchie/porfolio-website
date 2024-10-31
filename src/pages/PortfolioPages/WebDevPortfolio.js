@@ -1,13 +1,13 @@
 import React from "react";
 import { NavBar } from "../../utils/NavBar";
 
-function PotteryPortfolio() {
+function WebDevPortfolio() {
     return (
         <div className="main-container">
 
-                Pottery!!!!
+            WebDevPortfolio
         </div>
     );
 };
 
-export default PotteryPortfolio;
+export default WebDevPortfolio;
