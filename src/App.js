@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { Portfolio } from "./pages/Portfolio";
+import { Portfolio } from "./pages/PortfolioPages/PortfolioHome";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { NavBar } from "./utils/NavBar";

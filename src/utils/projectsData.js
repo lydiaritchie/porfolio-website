@@ -1,9 +1,12 @@
+
+
+
 const softwareEngineeringProjects = [
   {
     id: 1,
     title: "Project One",
     description: "A description of the first project.",
-    image: "path/to/image1.jpg",
+    image: "../graphics/portfolio-projects/software-engineering/flashcard-home.png",
     url: "https://example.com/project-one",
   },
   {
@@ -21,7 +24,7 @@ const designProjects = [
     id: 1,
     title: "Project One",
     description: "A description of the first project.",
-    image: "path/to/image1.jpg",
+    image: "",
     url: "https://example.com/project-one",
   },
   {
