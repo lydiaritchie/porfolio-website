@@ -16,9 +16,17 @@ export function Home() {
       <div className="main-container">
         <div className="d-flex justify-content-center">
           <LydiaRitchieHorizontal
-            className="d-sm-none"
+            className="d-block d-sm-none"
             style={{ width: "90%" }}
           />
+          
+          {/*<LydiaRitchieVertical className="d-none d-sm-block"
+          style={{ width: "50%", paddingTop: "10px"}} />*/}
+
+        </div>
+
+        <div className="d-flex justify-content-center d-block d-sm-none" style={{ color: "#173c5a"}}>
+        Software Engineer, Designer, Artist
         </div>
 
         <div className="desk-container">

@@ -3,7 +3,8 @@ import React from "react";
 export function NavBar({bgColor}) {
   return (
     <div>
-      <nav className="navbar navbar-expand-sm navbar-light d-none d-sm-block">
+      <nav className="navbar navbar-expand-sm navbar-light d-none d-sm-block"
+      style={{ background: bgColor }}>
         <ul className="navbar-nav justify-content-center ">
           <li className="nav-item px-4">
             <a className="nav-link" href="/">

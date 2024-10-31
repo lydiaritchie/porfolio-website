@@ -37,7 +37,7 @@
 }
 
 .desk {
-  transform: translateX(-30px) scale(2); /* Adjust for mobile zoom */
+  transform: translateX(-30px) scale(1.8); 
   transform-origin: top center;
   margin-bottom: 300px;
   margin-top: -25px;
@@ -56,18 +56,33 @@
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 575px) {
   .desk {
-    transform: scale(); /* Adjust for mobile zoom */
-
-
+    transform: scale(1.2); 
+    translate: 70px;
   }
 
-  .green-vase {
-    transform: translateX(2550px) translateY(1570px);
+  .lydia-vertical {
+    transform: scale(7.5);
+    translate: 950px 250px;
+  }
+
+  .subtitle {
+    font-size: 150px;
+    translate: 3550px 400px;
+    transform: rotate(-1deg);
   }
 
   .leaf-vase {
-    transform: translateX(2900px) translateY(1200px) scale(0.35);
+    translate: -2500px 200px;
   }
+
+  .green-vase {
+    translate: -1780px 200px
+  }
+
+  .flowers {
+    translate: -2500px 200px;
+  }
+
 }
