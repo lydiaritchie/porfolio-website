@@ -15,6 +15,11 @@
   background-color: #8baac2;
 }
 
+.secondary-container {
+  flex-direction: row;
+  padding: 10px 20px;
+}
+
 .contact-btn {
   border-radius: 30px;
   border-color: black;
