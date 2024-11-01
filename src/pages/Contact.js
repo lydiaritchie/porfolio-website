@@ -14,7 +14,7 @@ export function Contact() {
   const [instaColor, setInstaColor] = useState("transparent");
 
   return (
-    <div>
+    <div className="main-container">
          <header><NavBar /></header>
       <h3 className="text-center fst-italic" style={{marginTop: "15px"}} >Contact</h3>
       <div className="d-flex flex-wrap justify-content-center">

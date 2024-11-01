@@ -46,30 +46,37 @@
 }
 
 .portfolio-menu {
-  background-color: lightblue;
-  padding: 2px 8px 2px 8px;
-  gap: 10px;
-
-
+  flex-direction: column;
+  background-color: #a4c6df;
+  border-radius: 20px;
+  padding: 8px 8px 8px 8px;
+  gap: 4px;
+  margin-top: -13px;
 }
 
 .portfolio-btn {
   padding: 0 8px 0 8px;
-  margin: 4px 0 4px 0;
+  margin: 0px 0 0px 0;
 }
 
 .portfolio-btn:hover {
-  background-color: rgb(104, 151, 167);
+  background-color: #b5dbf5;
+}
+
+
+.portfolio-btn-selected {
+  background-color: #b5dbf5;
+  box-shadow: 0px 0px 3px rgb(104, 151, 167); /* Example of an inset shadow */
 }
 
 .teapot:hover image {
-  filter: brightness(0.5);
+  filter: brightness(0.2);
 }
 
 
-@media (min-width: 300px) {
-  .contact-container {
-    max-width: 250px;
+@media (min-width: 305px) {
+  .portfolio-menu {
+    flex-direction: row;
   }
 }
 
@@ -102,4 +109,7 @@
     translate: -2500px 200px;
   }
 
+  .portfolio-menu {
+    flex-direction: row;
+  }
 }
