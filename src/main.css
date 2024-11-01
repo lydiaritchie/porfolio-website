@@ -45,6 +45,23 @@
   height: auto;
 }
 
+.portfolio-menu {
+  background-color: lightblue;
+  padding: 2px 8px 2px 8px;
+  gap: 10px;
+
+
+}
+
+.portfolio-btn {
+  padding: 0 8px 0 8px;
+  margin: 4px 0 4px 0;
+}
+
+.portfolio-btn:hover {
+  background-color: rgb(104, 151, 167);
+}
+
 .teapot:hover image {
   filter: brightness(0.5);
 }

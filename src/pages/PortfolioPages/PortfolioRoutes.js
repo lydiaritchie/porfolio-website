@@ -33,17 +33,23 @@ export function Portfolio() {
       </header>
       <h5 className="text-center"></h5>
 
-      <div className="nav-bar d-flex justify-content-between">
-          <NavLink className="nav-link" to="web-development-projects">
+      <div className="d-flex justify-content-center">
+        <div className="nav-bar d-flex rounded-pill portfolio-menu" style={{width: "fit-content"}}>
+          <NavLink
+            className="nav-link rounded-pill portfolio-btn"
+            to="web-development-projects"
+          >
             Web Development
           </NavLink>
-          <NavLink className="nav-link" to="design-projects">
-            Design 
+          <NavLink className="nav-link rounded-pill portfolio-btn" to="design-projects">
+            Design
           </NavLink>
-          <NavLink className="nav-link" to="pottery">
+          <NavLink className="nav-link  rounded-pill portfolio-btn" to="pottery">
             Pottery
           </NavLink>
         </div>
+      </div>
+
       <Routes>
         <Route path="web-development-projects" element={<WebDevPortfolio />} />
         <Route path="design-projects" element={<DesignPortfolio />} />
