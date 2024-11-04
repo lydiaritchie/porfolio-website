@@ -7,7 +7,7 @@ import keyboard from "./home-graphics/keyboard.png";
 import greenVase from "./home-graphics/green-vase.png";
 import nemo from "./home-graphics/nemo-skewed-screenshot.png";
 import openScreenshot from "./home-graphics/open-skewed-screenshot.png";
-import teapot from "./home-graphics/teapot.png";
+import teapot from "./home-graphics/blue-teapot.png";
 import flowers from "./home-graphics/flowers.png";
 import { brew } from "../utils/api";
 import teapotError from "../graphics/home-graphics/418-error-msg.png";
@@ -125,18 +125,14 @@ function DeskComponent() {
         <image transform="translate(5300 2550) scale(.30)" href={flowerMug} />
 
         <a className="teapot" onClick={handleTeapot}>
-          <image transform="translate(5650 2250) scale(.75)" href={teapot} />
+          <image transform="translate(5850 2400) scale(.75)" href={teapot} />
         </a>
 
-        <path
-          fill=""
-          transform="translate(-250 30)"
-          d="M6422.03,2406.97c48.53-11.28,25.8,38.12,40.29,68.84-4.21,5.73-71.46,8.36-74.41,5.47-1.32-1.29-5.78-31.83-5.59-36.54,1.37-35.18,27.14-30.49,28.64-35.53,2.62-8.79-4.43-77.88-7.35-90.04-6.37-26.53-38.83-27.18-62.12-28.14,9.42-29.74,43.24-12.37,57.23-5.65,42.07,20.2,24.19,68.95,23.31,121.59ZM6445.02,2470.09l-5.77-51.65c-8.34,8.37-38.66,4.27-40.19,5.71-1.88,1.78,1.36,37.59,0,46l45.96-.06Z"
-        />
+        <path transform="translate(6080 2485) scale(0.2)" d="M1003.25,723.01c56.06-29.44,121.13-24.05,121.13-24.05,0,0,65.25,207.98,148.28,307.37-13.35,33.58-340.78,132.86-359.02,122.44-8.16-4.66-96.83-312.47-96.83-312.47,0,0,116.77-44.93,117.69-71.64,1.6-46.59-108.88-323.57-138.87-379.68-65.4-122.34-179.95-296.54-295.71-271.36,71.81-25.59,151.72-31.89,181.32-39.62,68.16,11.6,170.58,221.63,191.11,255.31,99.78,163.74,90.27,290.09,130.9,413.71ZM1180.21,1000.42l-94.71-246.68c-30.27,51.88-184.69,70.61-190.37,79.7-6.97,11.15,54.95,183.14,59.09,226.27l225.99-59.29Z" />
 
         <image transform="translate(3220 2270) scale(0.945)" href={keyboard} />
 
-       {/* <text fill="#173c5a" className="d-none d-sm-block subtitle">
+        {/* <text fill="#173c5a" className="d-none d-sm-block subtitle">
           Software Engineer, Designer, Artist
         </text>
         */}
