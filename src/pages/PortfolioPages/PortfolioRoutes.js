@@ -92,7 +92,9 @@ export function Portfolio() {
         </div>
       </div>
 
-      <Outlet />
+      <div className="mx-4 my-2">
+        <Outlet />
+      </div>
     </div>
   );
 }
