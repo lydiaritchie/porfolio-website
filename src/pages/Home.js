@@ -6,7 +6,6 @@ import { ReactComponent as LydiaRitchieVertical } from "../graphics/personal-bra
 import { ReactComponent as LydiaRitchieHorizontal } from "../graphics/personal-branding/lydia-ritchie-horizontal.svg";
 
 export function Home() {
-
   return (
     <div>
       <header>
@@ -14,19 +13,18 @@ export function Home() {
       </header>
 
       <div className="main-container">
-        <div className="d-flex justify-content-center">
-          <LydiaRitchieHorizontal
-            className="d-block d-sm-none"
-            style={{ width: "90%" }}
-          />
-          
-          {/*<LydiaRitchieVertical className="d-none d-sm-block"
-          style={{ width: "50%", paddingTop: "10px"}} />*/}
+        <div
+          className="d-flex row justify-content-center name-horizontal"
+          style={{ background: "", marginBottom: "-15px", marginTop: "5px", fontSize: "25px"}}
+        >
+          <LydiaRitchieHorizontal className="" style={{ width: "90%" }} />
 
-        </div>
-
-        <div className="d-flex justify-content-center d-block d-sm-none" style={{ color: "#173c5a"}}>
-        Software Engineer, Designer, Artist
+          <div
+            className="d-flex justify-content-center"
+            style={{ color: "#425c77", marginTop: "10px" }}
+          >
+            Software Engineer, Designer, Artist
+          </div>
         </div>
 
         <div className="desk-container">
@@ -38,3 +36,5 @@ export function Home() {
     </div>
   );
 }
+/*<LydiaRitchieVertical className="d-none d-sm-block"
+          style={{ width: "50%", paddingTop: "10px"}} />*/

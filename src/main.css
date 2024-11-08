@@ -8,6 +8,10 @@
   outline-width: 0;
 }
 
+.nav-link {
+  color: #425c77 !important;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -85,7 +89,7 @@
   }
 }
 
-@media (min-width: 575px) {
+@media (min-width: 700px) {
   .desk {
     transform: scale(1.2); 
     translate: 70px;
@@ -116,5 +120,9 @@
 
   .portfolio-menu {
     flex-direction: row;
+  }
+
+  .name-horizontal {
+    display: none !important;
   }
 }
