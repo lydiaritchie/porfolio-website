@@ -15,13 +15,13 @@ export function Home() {
       <div className="main-container">
         <div
           className="d-flex row justify-content-center name-horizontal"
-          style={{ background: "", marginBottom: "-15px", marginTop: "5px", fontSize: "25px"}}
+          style={{ background: "", marginBottom: "-15px", marginTop: "5px"}}
         >
           <LydiaRitchieHorizontal className="" style={{ width: "90%" }} />
 
           <div
             className="d-flex justify-content-center"
-            style={{ color: "#425c77", marginTop: "10px" }}
+            style={{ color: "#425c77", marginTop: "10px", marginBottom: "5px", fontSize: "4vw" }}
           >
             Software Engineer, Designer, Artist
           </div>

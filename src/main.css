@@ -41,17 +41,15 @@
 
 .desk-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   overflow: hidden;
-  width: 100vw;
 }
 
 .desk {
   transform: translateX(-30px) scale(1.8); 
   transform-origin: top center;
   margin-bottom: 300px;
-  margin-top: -25px;
+  margin-top: -20px;
   width: 100%;
   height: auto;
 }
@@ -84,42 +82,53 @@
   filter: brightness(0.6);
 }
 
-
+/* For a very narrow screen */
 @media (min-width: 305px) {
   .portfolio-menu {
     flex-direction: row;
   }
 }
 
+/* Contact container */
+@media (min-width: 300px){
+  .contact-container {
+    width: 300px;
+  }
+}
+
 /* This is for the home page desk component
    It has a different break point than normal due to the illustraion size */
-@media (min-width: 700px) {
+@media (min-width: 776px) {
   .desk {
-    transform: scale(1.2); 
+    transform: scale(1.4); 
     translate: 70px;
   }
 
   .lydia-vertical {
-    transform: scale(7.5);
-    translate: 950px 250px;
+    transform: scale(6.6);
+    translate: 1350px 380px;
   }
 
   .subtitle {
-    font-size: 150px;
-    translate: 3550px 400px;
-    transform: rotate(-1deg);
+    font-size: 128px;
+    fill:#425c77;
+    translate: 1430px 1800px;
+    /*
+    rotate: 10.5deg;
+    transform: skew(12deg);
+    */
   }
 
   .leaf-vase {
-    translate: -2500px 200px;
+    translate: -2000px 300px;
   }
 
   .green-vase {
-    translate: -1780px 200px
+    translate: -1280px 300px
   }
 
   .flowers {
-    translate: -2500px 200px;
+    translate: -2000px 300px;
   }
 
   .portfolio-menu {

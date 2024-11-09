@@ -132,10 +132,10 @@ function DeskComponent() {
 
         <image transform="translate(3220 2270) scale(0.945)" href={keyboard} />
 
-        {/* <text fill="#173c5a" className="d-none d-sm-block subtitle">
-          Software Engineer, Designer, Artist
+        <text className="d-none d-sm-block subtitle" >
+         Software Engineer, Designer, Artist
         </text>
-        */}
+        
       </svg>
     </>
   );

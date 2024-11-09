@@ -13,12 +13,19 @@ export function Contact() {
   const [emailColor, setEmailColor] = useState("transparent");
   const [instaColor, setInstaColor] = useState("transparent");
 
-  const iconColor = "#173c5a";
-
   return (
     <div className="main-container">
-         <header><NavBar /></header>
-      <h3 className="text-center fst-italic" style={{marginTop: "15px", color: "#173c5a"}} >Contact</h3>
+      <header>
+        <NavBar />
+      </header>
+      <div
+        className="text-center fst-italic"
+        style={{ color: "#173c5a" }}
+      >
+        <h3>Contact</h3>
+        <p className="mx-4">Feel free to reach out or explore my work through the links below!</p>
+      </div>
+
       <div className="d-flex flex-wrap justify-content-center">
         <div className="row contact-container">
           <a
@@ -42,7 +49,7 @@ export function Contact() {
             href="https://github.com/lydiaritchie"
             onMouseEnter={() => setGitHubColor(getRandomColor())}
             onMouseLeave={() => setGitHubColor("transparent")}
-            style={{ backgroundColor: gitHubColor}}
+            style={{ backgroundColor: gitHubColor }}
           >
             <img
               className="mx-2"
