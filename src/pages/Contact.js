@@ -4,7 +4,7 @@ import linkedInIcon from "../graphics/icons/linkedIn-icon.svg";
 import githubIcon from "../graphics/icons/github-icon.svg";
 import emailIcon from "../graphics/icons/email-bg-icon.svg";
 import instaIcon from "../graphics/icons/insta-icon.svg";
-import { getRandomColor } from "../utils/randomColor";
+import { getRandomColor } from "../utils/RandomColor";
 import { NavBar } from "../utils/NavBar";
 
 export function Contact() {
@@ -13,10 +13,12 @@ export function Contact() {
   const [emailColor, setEmailColor] = useState("transparent");
   const [instaColor, setInstaColor] = useState("transparent");
 
+  const iconColor = "#173c5a";
+
   return (
     <div className="main-container">
          <header><NavBar /></header>
-      <h3 className="text-center fst-italic" style={{marginTop: "15px"}} >Contact</h3>
+      <h3 className="text-center fst-italic" style={{marginTop: "15px", color: "#173c5a"}} >Contact</h3>
       <div className="d-flex flex-wrap justify-content-center">
         <div className="row contact-container">
           <a

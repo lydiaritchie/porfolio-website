@@ -26,10 +26,12 @@
 
 .contact-btn {
   border-radius: 30px;
-  border-color: black;
+  border-color: #173c5a;
+  color: #173c5a;
   margin: 10px 0;
   word-wrap: break-word;
   font-size: small;
+
 }
 
 .contact-container {
@@ -74,8 +76,8 @@
 
 .portfolio-btn-selected {
   background-color: #b5dbf5;
-  padding: 1px 9px 1px 9px;
-  box-shadow: inset 0px 0px 4px rgb(104, 151, 167); /* Example of an inset shadow */
+  padding: 0px 8px 0px 8px;
+  box-shadow: 0px 0px 4px rgb(104, 151, 167); /* Example of an inset shadow */
 }
 
 .teapot:hover image {
@@ -89,6 +91,8 @@
   }
 }
 
+/* This is for the home page desk component
+   It has a different break point than normal due to the illustraion size */
 @media (min-width: 700px) {
   .desk {
     transform: scale(1.2); 

@@ -1,14 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, NavLink, useLocation, Outlet } from "react-router-dom";
+import {NavLink, useLocation, Outlet } from "react-router-dom";
 import { NavBar } from "../../utils/NavBar";
-import {
-  softwareEngineeringProjects,
-  designProjects,
-  potteryProjects,
-} from "../../utils/projectsData";
-import WebDevPortfolio from "./WebDevPortfolio";
-import DesignPortfolio from "./DesignPortfolio";
-import PotteryPortfolio from "./PotteryPortfolio";
 
 export function Portfolio() {
   //State to manage clicked buttons in portfolio menu
@@ -37,21 +29,6 @@ export function Portfolio() {
       setPotteryStatus(true);
     }
   });
-
-  // Map project data into cards
-  const softwareEngineeringCards = softwareEngineeringProjects.map(
-    (project) => {
-      return (
-        <div className="card my-2">
-          <div className="card-body">
-            <div className="card-title">{project.title}</div>
-            <p className="card-text">Card text</p>
-            <img src={project.image} />
-          </div>
-        </div>
-      );
-    }
-  );
 
   return (
     <div className="main-container">
