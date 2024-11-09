@@ -31,7 +31,6 @@
   margin: 10px 0;
   word-wrap: break-word;
   font-size: small;
-
 }
 
 .contact-container {
@@ -46,7 +45,7 @@
 }
 
 .desk {
-  transform: translateX(-30px) scale(1.8); 
+  transform: translateX(-30px) scale(1.8);
   transform-origin: top center;
   margin-bottom: 300px;
   margin-top: -20px;
@@ -82,6 +81,28 @@
   filter: brightness(0.6);
 }
 
+.pot-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: auto; /* Helps to maintain masonry-like layout */
+}
+
+.pot-item {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Ensures content does not overflow and maintain card boundaries */
+ 
+}
+
+.pot-image {
+  width: 100%; /* Ensure the image fills the card horizontally */
+  height: 100%; /* Make the image take the full height of the card */
+  object-fit: cover; /* Crop the image while maintaining aspect ratio */
+  border-radius: 4px;
+}
+
 /* For a very narrow screen */
 @media (min-width: 305px) {
   .portfolio-menu {
@@ -90,7 +111,7 @@
 }
 
 /* Contact container */
-@media (min-width: 300px){
+@media (min-width: 300px) {
   .contact-container {
     width: 300px;
   }
@@ -100,7 +121,7 @@
    It has a different break point than normal due to the illustraion size */
 @media (min-width: 776px) {
   .desk {
-    transform: scale(1.4); 
+    transform: scale(1.4);
     translate: 70px;
   }
 
@@ -111,7 +132,7 @@
 
   .subtitle {
     font-size: 128px;
-    fill:#425c77;
+    fill: #425c77;
     translate: 1430px 1800px;
     /*
     rotate: 10.5deg;
@@ -124,7 +145,7 @@
   }
 
   .green-vase {
-    translate: -1280px 300px
+    translate: -1280px 300px;
   }
 
   .flowers {

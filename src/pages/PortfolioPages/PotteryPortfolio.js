@@ -1,30 +1,55 @@
-import React from "react";
+import React, {useState} from "react";
 import { Modal, Carousel } from "bootstrap";
-import { additionalWorks } from "../../utils/ProjectsData";
-import pottery1 from "../../graphics/pots/portfolio/additional-works/pottery1.png";
+import potteryData from "../../utils/PotteryData";
 
 function PotteryPortfolio() {
-  const allImages = [{
-    id: 1,
-    title: "blue vase",
-    image: pottery1,
-  }];
+  const [showModal, setShowModal] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [collapsedCategories, setCollapsedCategories] = useState({});
 
-  const slides = allImages.map((image) => ({
-    src: image.image,
-    alt: image.title,
-    title: image.title,
-  }));
+  const toggleCategory = (category) => {
+    setCollapsedCategories((prev) => ({
+      ...prev,
+      [category]: !prev[category],
+    }));
+  };
+
+  const handleImageClick = (category, index) => {
+    setSelectedCategory(category);
+    setSelectedImage(potteryData[category][index]);
+    setActiveIndex(index);
+    setShowModal(true);
+  };
+
+  const handleClose = () => {
+    setShowModal(false);
+    setSelectedImage(null);
+  };
+
+  const handleCarouselSelect = (index) => {
+    setActiveIndex(index);
+    setSelectedImage(potteryData[selectedCategory][index]);
+  };
+
+
 
   return (
-    <div className="main-container">
-      <h5>Pottery Portfolio</h5>
+    <div className="">
+  {Object.entries(potteryData).map(([category, items]) => (
+        <div key={category} className="category-section">
+          <h4>{category.charAt(0).toUpperCase() + category.slice(1)}</h4>
+          <div className="pot-container">
+            {items.map((item) => (
+              <div key={item.id} className="pot-item">
+                <img src={item.image} alt={item.description} loading="lazy" className="pot-image" />
 
-      <div className="container">
-        <div className="row">
-      
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }
