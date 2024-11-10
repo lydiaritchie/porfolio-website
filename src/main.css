@@ -103,6 +103,10 @@
   border-radius: 4px;
 }
 
+.pot-image:hover {
+  filter: brightness(0.6);
+}
+
 /* For a very narrow screen */
 @media (min-width: 305px) {
   .portfolio-menu {
