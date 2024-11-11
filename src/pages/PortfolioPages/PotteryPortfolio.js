@@ -4,10 +4,7 @@ import potteryData from "../../utils/PotteryData";
 
 function PotteryPortfolio() {
   const [showModal, setShowModal] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const [selectedImage, setSelectedImage] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [collapsedCategories, setCollapsedCategories] = useState({});
 
   const allImages = Object.entries(potteryData).flatMap(([category, items]) =>
     items.map((item, index) => ({
@@ -30,11 +27,28 @@ function PotteryPortfolio() {
     setActiveIndex(selectedIndex);
   };
 
+  const capitalizeCategory = (category) => {
+    return category === "additionalWorks"
+      ? category.charAt(0).toUpperCase() +
+          category.slice(1, 10) +
+          " " +
+          category.slice(10)
+      : category.charAt(0).toUpperCase() + category.slice(1);
+  };
+
   return (
     <div className="">
       {Object.entries(potteryData).map(([category, items]) => (
         <div key={category} className="category-section">
-          <h4>{category.charAt(0).toUpperCase() + category.slice(1)}</h4>
+          <h4
+            style={{
+              color: "#425c77",
+              fontStyle: "oblique",
+              marginTop: "20px",
+            }}
+          >
+            {capitalizeCategory(category)}
+          </h4>
           <div className="pot-container">
             {items.map((item, index) => {
               const flatIndex = allImages.findIndex(
@@ -64,7 +78,7 @@ function PotteryPortfolio() {
         dialogClassName="modal-90w"
         className="90w"
       >
-        <Modal.Body className="p-0" style={{ height: "auto" }}>
+        <Modal.Body className="p-0">
           <Carousel
             activeIndex={activeIndex}
             onSelect={handleCarouselSelect}
@@ -74,16 +88,12 @@ function PotteryPortfolio() {
             slide
           >
             {allImages.map((item, idx) => (
-              <Carousel.Item
-                key={idx}
-                style={{ backgroundColor: "transparent" }}
-              >
+              <Carousel.Item key={idx}>
                 <div
                   style={{
-                    width: "100%", // Full width of carousel
-                    height: "600px", // Fixed height for consistency
-                    overflow: "hidden", // Prevents overflow of images
-                    display: "flex", // Center image inside the div
+                    height: idx === 46 ? "100%" : "600px",
+                    overflow: "hidden",
+                    display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                   }}
@@ -93,9 +103,8 @@ function PotteryPortfolio() {
                     src={item.image}
                     alt={item.description}
                     style={{
-                      objectFit: "cover", // Ensures the image fills the container and maintains aspect ratio
-                      height: "500px", // Set a fixed height
-                      maxWidth: "100%", // Ensure it takes up full width
+                      objectFit: "cover",
+                      height: "500px",
                     }}
                   />
                 </div>
