@@ -56,7 +56,6 @@ function PotteryPortfolio() {
         </div>
       ))}
 
-
       <Modal
         show={showModal}
         onHide={handleClose}
@@ -65,7 +64,7 @@ function PotteryPortfolio() {
         dialogClassName="modal-90w"
         className="90w"
       >
-        <Modal.Body className="p-0" style={{height: "auto"}}>
+        <Modal.Body className="p-0" style={{ height: "auto" }}>
           <Carousel
             activeIndex={activeIndex}
             onSelect={handleCarouselSelect}
@@ -75,18 +74,31 @@ function PotteryPortfolio() {
             slide
           >
             {allImages.map((item, idx) => (
-              <Carousel.Item key={idx} style={{backgroundColor: "transparent"}}>
-                <img
-                  className="d-block w-100 h-100"
-                  src={item.image}
-                  alt={item.description}
+              <Carousel.Item
+                key={idx}
+                style={{ backgroundColor: "transparent" }}
+              >
+                <div
                   style={{
-                objectFit: 'cover',  // Ensures the image fills the container and maintains aspect ratio
-                height: '500px',   // Set a fixed height
-                maxWidth: '100%',     // Ensure it takes up full width
-                overflow: "hidden",
-              }}
-                />
+                    width: "100%", // Full width of carousel
+                    height: "600px", // Fixed height for consistency
+                    overflow: "hidden", // Prevents overflow of images
+                    display: "flex", // Center image inside the div
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    className="d-block w-100 h-100"
+                    src={item.image}
+                    alt={item.description}
+                    style={{
+                      objectFit: "cover", // Ensures the image fills the container and maintains aspect ratio
+                      height: "500px", // Set a fixed height
+                      maxWidth: "100%", // Ensure it takes up full width
+                    }}
+                  />
+                </div>
               </Carousel.Item>
             ))}
           </Carousel>
