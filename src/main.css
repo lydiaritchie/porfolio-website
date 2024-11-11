@@ -53,6 +53,10 @@
   height: auto;
 }
 
+.pot-image:hover {
+  filter: brightness(0.6);
+}
+
 .portfolio-menu {
   flex-direction: column;
   background-color: #a4c6df;
@@ -82,29 +86,33 @@
 }
 
 .pot-container {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-auto-rows: auto; /* Helps to maintain masonry-like layout */
+  column-count: 2; /* Adjust as needed, this is for small screens */
+  column-gap: 20px; /* Adjust space between columns */
 }
 
 .pot-item {
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; /* Ensures content does not overflow and maintain card boundaries */
- 
+  break-inside: avoid; /* Prevents items from breaking across columns */
+  margin-bottom: 20px; /* Space between items vertically */
 }
 
 .pot-image {
-  width: 100%; /* Ensure the image fills the card horizontally */
-  height: 100%; /* Make the image take the full height of the card */
-  object-fit: cover; /* Crop the image while maintaining aspect ratio */
+  width: 100%;
+  object-fit: cover;
   border-radius: 4px;
 }
 
-.pot-image:hover {
-  filter: brightness(0.6);
+/* adjust pottery portfolio image grid */
+
+@media (min-width: 550px) {
+  .pot-container{
+    column-count: 3;
+  }
+}
+
+@media (min-width: 750px) {
+  .pot-container{
+    column-count: 4;
+  }
 }
 
 /* For a very narrow screen */

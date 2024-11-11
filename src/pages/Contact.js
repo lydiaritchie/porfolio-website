@@ -20,7 +20,11 @@ export function Contact() {
       </header>
       <div
         className="text-center fst-italic"
-        style={{ color: "#173c5a" }}
+        style={{
+          color: "#425c77",
+          fontStyle: "oblique",
+          marginTop: "10px",
+        }}
       >
         <h3>Contact</h3>
         <p className="mx-4">Feel free to reach out or explore my work through the links below!</p>
