@@ -24,6 +24,18 @@
   padding: 10px 20px;
 }
 
+.heading-italic {
+  color: #425c77;
+  font-style: oblique;
+  margin-top: 20px;
+}
+
+.heading-bold {
+  color: #425c77;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
 .contact-btn {
   border-radius: 30px;
   border-color: #173c5a;
@@ -53,7 +65,7 @@
   height: auto;
 }
 
-.pot-image:hover {
+.teapot:hover image {
   filter: brightness(0.6);
 }
 
@@ -78,21 +90,41 @@
 .portfolio-btn-selected {
   background-color: #b5dbf5;
   padding: 0px 8px 0px 8px;
-  box-shadow: 0px 0px 4px rgb(104, 151, 167); /* Example of an inset shadow */
+  box-shadow: 0px 0px 4px rgb(104, 151, 167);
 }
 
-.teapot:hover image {
-  filter: brightness(0.6);
+.web-dev-card {
+  background-color: rgba(164, 198, 223);
+  box-shadow: 0px 0px 4px rgb(104, 151, 167);
+  margin-top: 10px;
+}
+
+.web-dev-subtitle {
+  font-style: oblique;
+  color: #425c77;
+}
+
+.link-btns {
+  color: #425c77;
+  margin: 5px 0px 0px 10px;
+  padding: 3px 5px 3px 5px;
+  background-color:#b5dbf5;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.link-btns:hover {
+  filter: brightness(0.8);
 }
 
 .pot-container {
-  column-count: 2; /* Adjust as needed, this is for small screens */
-  column-gap: 20px; /* Adjust space between columns */
+  column-count: 2;
+  column-gap: 20px;
 }
 
 .pot-item {
-  break-inside: avoid; /* Prevents items from breaking across columns */
-  margin-bottom: 20px; /* Space between items vertically */
+  break-inside: avoid;
+  margin-bottom: 20px;
 }
 
 .pot-image {
@@ -104,15 +136,19 @@
 /* adjust pottery portfolio image grid */
 
 @media (min-width: 550px) {
-  .pot-container{
+  .pot-container {
     column-count: 3;
   }
 }
 
 @media (min-width: 750px) {
-  .pot-container{
+  .pot-container {
     column-count: 4;
   }
+}
+
+.pot-image:hover {
+  filter: brightness(0.6);
 }
 
 /* For a very narrow screen */
