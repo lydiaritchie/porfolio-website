@@ -2,7 +2,6 @@ import restaurantImage from "../graphics/portfolio-projects/software-engineering
 import flashcardImage from "../graphics/portfolio-projects/software-engineering/flashcard-home.png";
 import moviesImage from "../graphics/portfolio-projects/software-engineering/movies-screenshot.png";
 import grubdashImage from "../graphics/portfolio-projects/software-engineering/grubdash-screenshot.png";
-import WebDevPortfolio from "../pages/PortfolioPages/WebDevPortfolio";
 
 const webDevData = [
     {
@@ -44,4 +43,4 @@ const webDevData = [
   ];
   
 
-export default { webDevData };
+export default webDevData;

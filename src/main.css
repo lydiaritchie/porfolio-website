@@ -96,7 +96,13 @@
 .web-dev-card {
   background-color: rgba(164, 198, 223);
   box-shadow: 0px 0px 4px rgb(104, 151, 167);
-  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 95%;
+
+}
+
+.web-dev-card-img {
+  height: 200px;
 }
 
 .web-dev-subtitle {
@@ -104,13 +110,24 @@
   color: #425c77;
 }
 
+.link-container {
+  display: inline-flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-content: center;
+}
+
 .link-btns {
+  display: flex;
+  justify-content: center;
   color: #425c77;
   margin: 5px 0px 0px 10px;
   padding: 3px 5px 3px 5px;
-  background-color:#b5dbf5;
+  background-color: #b5dbf5;
   border-radius: 5px;
   text-decoration: none;
+  width: 70px;
 }
 
 .link-btns:hover {
@@ -133,7 +150,18 @@
   border-radius: 4px;
 }
 
-/* adjust pottery portfolio image grid */
+/* Adjust webdev cards for larger screen */
+
+@media (min-width: 375px) {
+  .web-dev-container {
+
+  }
+
+  .web-dev-card {
+  }
+}
+
+/* Adjust pottery portfolio image grid */
 
 @media (min-width: 550px) {
   .pot-container {
