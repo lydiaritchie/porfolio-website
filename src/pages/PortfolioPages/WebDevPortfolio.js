@@ -1,6 +1,5 @@
 import React from "react";
 import { CardImg } from "react-bootstrap";
-import flashcardHome from "../../graphics/portfolio-projects/software-engineering/flashcard-home.png";
 import WebDevData from "../../utils/WebDevData";
 
 function WebDevPortfolio() {
@@ -37,14 +36,18 @@ function WebDevPortfolio() {
         </div>
       </div>
       <div className="grid row g-3">
-        {WebDevData.map((project) => (
+        {WebDevData.map((project, index) => (
           <div className="col-12 col-sm-6" key={project.title}>
             <div className="card web-dev-card">
               <div className="card-body">
                 <CardImg src={project.image} />
                 <h5 className="card-title heading-bold">{project.title}</h5>
                 <div className="link-container">
-                  <a className="link-btns" target="_blank" href={project.link}>
+                  <a
+                    className="link-btns"
+                    target="_blank"
+                    href={project.link}
+                  >
                     Website
                   </a>
                   <a
