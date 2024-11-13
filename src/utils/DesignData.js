@@ -4,11 +4,11 @@ import hornbill from "../graphics/portfolio-projects/design/stickers/hornbill.pn
 import chowBanBenKru from "../graphics/portfolio-projects/design/stickers/chowBanBenKru.png";
 
 const designData = {
-  stickers: [
-    { id: 1, description: "A description of vase 1.", image: elephant },
-    { id: 2, description: "A description of vase 2.", image: nemo },
-    { id: 3, description: "A description of vase 3.", image: hornbill },
-    { id: 4, description: "A description of vase 4.", image: chowBanBenKru },
+  illustrations: [
+    { id: 1, caption: "", description: "Illustrated elephant sticker.", image: elephant },
+    { id: 2, caption: "", description: "Illustrated nemo sticker.", image: nemo },
+    { id: 3, caption: "", description: "Illustrated horn bill with scientific and common name.", image: hornbill },
+    { id: 4, caption: "The villager is the teacher", description: "Thai writing meaning 'the villager is the teacher' with a small illustrated wooden house.", image: chowBanBenKru },
   ],
 };
 

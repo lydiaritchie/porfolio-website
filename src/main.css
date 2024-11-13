@@ -187,6 +187,7 @@
   .desk {
     transform: scale(1.4);
     translate: 70px;
+    margin-top: -60px;
   }
 
   .lydia-vertical {

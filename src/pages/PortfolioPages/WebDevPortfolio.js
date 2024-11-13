@@ -30,6 +30,7 @@ function WebDevPortfolio() {
               backgroundColor: "#a4c6df",
             }}
             target="_blank"
+            rel="noopener noreferrer"
           >
             Github
           </a>
@@ -46,6 +47,7 @@ function WebDevPortfolio() {
                   <a
                     className="link-btns"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href={project.link}
                   >
                     Website
@@ -53,6 +55,7 @@ function WebDevPortfolio() {
                   <a
                     className="link-btns"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href={project.github}
                   >
                     Github
