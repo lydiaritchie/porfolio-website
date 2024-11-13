@@ -35,9 +35,8 @@ export function Portfolio() {
       <header>
         <NavBar />
       </header>
-      <h5 className="text-center"></h5>
 
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center" >
         <div
           className="nav-bar d-flex portfolio-menu"
           style={{ width: "fit-content" }}

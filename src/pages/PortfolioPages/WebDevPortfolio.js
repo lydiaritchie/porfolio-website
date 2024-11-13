@@ -5,10 +5,40 @@ import WebDevData from "../../utils/WebDevData";
 
 function WebDevPortfolio() {
   return (
-    <div className="main-container">
-      <div className="row web-dev-container">
+    <div className="main-container mt-3">
+      <div
+        className="web-dev-subtitle justify-content-center"
+        style={{
+          marginBottom: "16px",
+          marginTop: "-10px",
+        }}
+      >
+        <div className="d-flex justify-content-center">
+          Please allow time for websites to load :)
+        </div>
+
+        <div
+          className="d-flex justify-content-center"
+          style={{ marginTop: "10px" }}
+        >
+          For this website:
+          <a
+            className="link-btns"
+            href="https://github.com/lydiaritchie/portfolio-website"
+            style={{
+              marginLeft: "5px",
+              padding: "0",
+              backgroundColor: "#a4c6df",
+            }}
+            target="_blank"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+      <div className="grid row web-dev-container g-3">
         {WebDevData.map((project) => (
-          <div className="col-12 col-sm-6 " key={project.title}>
+          <div className="col-12 col-sm-6" key={project.title}>
             <div className="card web-dev-card">
               <div className="card-body">
                 <CardImg src={project.image} />
@@ -26,9 +56,6 @@ function WebDevPortfolio() {
                   </a>
                 </div>
                 <div className="web-dev-subtitle">{project.description}</div>
-                <div className="web-dev-subtitle small">
-                  Please allow time for websites to load :)
-                </div>
               </div>
             </div>
           </div>
