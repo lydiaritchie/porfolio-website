@@ -93,10 +93,6 @@
   box-shadow: 0px 0px 4px rgb(104, 151, 167);
 }
 
-.web-dev-container {
-
-}
-
 .web-dev-card {
   background-color: rgba(164, 198, 223);
   box-shadow: 0px 0px 5px #6d8698;
@@ -153,14 +149,8 @@
   border-radius: 4px;
 }
 
-/* Adjust webdev cards for larger screen */
-
-@media (min-width: 375px) {
-  .web-dev-container {
-  }
-
-  .web-dev-card {
-  }
+.pot-image:hover {
+  filter: brightness(0.6);
 }
 
 /* Adjust pottery portfolio image grid */
@@ -175,10 +165,6 @@
   .pot-container {
     column-count: 4;
   }
-}
-
-.pot-image:hover {
-  filter: brightness(0.6);
 }
 
 /* For a very narrow screen */

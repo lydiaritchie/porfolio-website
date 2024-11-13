@@ -36,7 +36,7 @@ function WebDevPortfolio() {
           </a>
         </div>
       </div>
-      <div className="grid row web-dev-container g-3">
+      <div className="grid row g-3">
         {WebDevData.map((project) => (
           <div className="col-12 col-sm-6" key={project.title}>
             <div className="card web-dev-card">

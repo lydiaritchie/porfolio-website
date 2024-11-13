@@ -43,10 +43,17 @@ function DeskComponent() {
         {/* Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186) */}
         <image transform="scale(2.0)" href={backgroundColors} />
 
-        <image
-          transform="translate(3450 570) scale(.769)"
-          href={vscodeScreenshot}
-        />
+        <a
+          className="teapot"
+          target="_blank"
+          href="https://github.com/lydiaritchie/portfolio-website"
+          style={{ cursor: 'default' }}
+        >
+          <image
+            transform="translate(3450 570) scale(.769)"
+            href={vscodeScreenshot}
+          />
+        </a>
 
         {brewError ? (
           <image transform="translate(3600 1550) scale(1)" href={teapotError} />
@@ -128,14 +135,16 @@ function DeskComponent() {
           <image transform="translate(5850 2400) scale(.75)" href={teapot} />
         </a>
 
-        <path transform="translate(6080 2485) scale(0.2)" d="M1003.25,723.01c56.06-29.44,121.13-24.05,121.13-24.05,0,0,65.25,207.98,148.28,307.37-13.35,33.58-340.78,132.86-359.02,122.44-8.16-4.66-96.83-312.47-96.83-312.47,0,0,116.77-44.93,117.69-71.64,1.6-46.59-108.88-323.57-138.87-379.68-65.4-122.34-179.95-296.54-295.71-271.36,71.81-25.59,151.72-31.89,181.32-39.62,68.16,11.6,170.58,221.63,191.11,255.31,99.78,163.74,90.27,290.09,130.9,413.71ZM1180.21,1000.42l-94.71-246.68c-30.27,51.88-184.69,70.61-190.37,79.7-6.97,11.15,54.95,183.14,59.09,226.27l225.99-59.29Z" />
+        <path
+          transform="translate(6080 2485) scale(0.2)"
+          d="M1003.25,723.01c56.06-29.44,121.13-24.05,121.13-24.05,0,0,65.25,207.98,148.28,307.37-13.35,33.58-340.78,132.86-359.02,122.44-8.16-4.66-96.83-312.47-96.83-312.47,0,0,116.77-44.93,117.69-71.64,1.6-46.59-108.88-323.57-138.87-379.68-65.4-122.34-179.95-296.54-295.71-271.36,71.81-25.59,151.72-31.89,181.32-39.62,68.16,11.6,170.58,221.63,191.11,255.31,99.78,163.74,90.27,290.09,130.9,413.71ZM1180.21,1000.42l-94.71-246.68c-30.27,51.88-184.69,70.61-190.37,79.7-6.97,11.15,54.95,183.14,59.09,226.27l225.99-59.29Z"
+        />
 
         <image transform="translate(3220 2270) scale(0.945)" href={keyboard} />
 
-        <text className="d-none d-sm-block subtitle" >
-         Software Engineer, Designer, Artist
+        <text className="d-none d-sm-block subtitle">
+          Software Engineer, Designer, Artist
         </text>
-        
       </svg>
     </>
   );
