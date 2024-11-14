@@ -37,7 +37,7 @@ function PotteryPortfolio() {
   };
 
   return (
-    <div className="">
+    <div>
       {Object.entries(potteryData).map(([category, items]) => (
         <div key={category} className="category-section">
           <h4

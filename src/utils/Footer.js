@@ -7,7 +7,7 @@ export function Footer({ bgColor }) {
       style={{ background: bgColor, color: "#425c77" }}
     >
       <div className="mx-3 my-2 font-center small">
-        &copy; {new Date().getFullYear()} Your Website Name. All rights
+        &copy; {new Date().getFullYear()} Lydia Ritchie. All rights
         reserved.
       </div>
     </div>

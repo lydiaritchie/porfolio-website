@@ -159,6 +159,31 @@
   filter: brightness(0.6);
 }
 
+.design-container {
+  column-count: 2;
+  column-gap: 20px;
+}
+
+.design-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+.design-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Adjust design portfolio image grid */
+
+@media (min-width: 600px) {
+  .design-container {
+    column-count: 3;
+    column-gap: 20px;
+  }
+}
+
 /* Adjust pottery portfolio image grid */
 
 @media (min-width: 550px) {

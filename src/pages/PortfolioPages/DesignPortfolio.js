@@ -37,23 +37,27 @@ function DesignPortfolio() {
   };
 
   return (
-    <div className="">
+    <div>
       {Object.entries(designData).map(([category, items]) => (
         <div key={category} className="category-section">
           <h4 className="heading-italic">{capitalizeCategory(category)}</h4>
-          <div className="pot-container">
+          <div className="design-container">
             {items.map((item, index) => {
               const flatIndex = allImages.findIndex(
                 (img) => img.category === category && img.index === index
               );
               return (
-                <div key={item.id} className="pot-item">
+                <div key={item.id} className="design-item" style={{
+                  padding: 0, // Remove any padding from the container
+                  overflow: "hidden", // Prevents the scaled image from overflowing outside its container
+                }}>
                   <img
                     src={item.image}
                     alt={item.description}
                     loading="lazy"
-                    className="pot-image"
+                    className="design-img"
                     onClick={() => handleImageClick(flatIndex)}
+                    style={{ transform: `scale(${item.scale})`, width: "100%", display: "block",}}
                   />
                 </div>
               );
