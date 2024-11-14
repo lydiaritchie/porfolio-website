@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Carousel } from "react-bootstrap";
-import potteryData from "../../utils/PotteryData";
+import potteryData from "../../utils/data/PotteryData";
 
 function PotteryPortfolio() {
   const [showModal, setShowModal] = useState(false);

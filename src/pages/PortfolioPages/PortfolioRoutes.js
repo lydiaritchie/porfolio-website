@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation, Outlet } from "react-router-dom";
 import { NavBar } from "../../utils/NavBar";
+import { Footer } from "../../utils/Footer";
 
 export function Portfolio() {
   //State to manage clicked buttons in portfolio menu
@@ -8,7 +9,6 @@ export function Portfolio() {
   const [webDevStatus, setWebDevStatus] = useState(false);
   const [designStatus, setDesignStatus] = useState(false);
   const [potteryStatus, setPotteryStatus] = useState(false);
-  const [currentPath, setCurrentPath] = useState();
   const location = useLocation();
 
   useEffect(() => {
@@ -28,10 +28,13 @@ export function Portfolio() {
       setDesignStatus(false);
       setPotteryStatus(true);
     }
-  });
+  }, [location.pathname]);
 
   return (
     <div className="main-container">
+      <header>
+        <NavBar bgColor="#8baac2" />
+      </header>
       <div className="d-flex justify-content-center">
         <div
           className="nav-bar d-flex portfolio-menu"
@@ -67,6 +70,9 @@ export function Portfolio() {
       <div className="mx-4 my-2">
         <Outlet />
       </div>
+      <footer>
+        <Footer bgColor="#8baac2"/>
+      </footer>
     </div>
   );
 }

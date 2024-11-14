@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Carousel } from "react-bootstrap";
-import designData from "../../utils/DesignData";
+import designData from "../../utils/data/DesignData";
 
 function DesignPortfolio() {
   const [showModal, setShowModal] = useState(false);

@@ -6,6 +6,7 @@ import emailIcon from "../graphics/icons/email-bg-icon.svg";
 import instaIcon from "../graphics/icons/insta-icon.svg";
 import { getRandomColor } from "../utils/RandomColor";
 import { NavBar } from "../utils/NavBar";
+import { Footer } from "../utils/Footer";
 
 export function Contact() {
   const [linkedInColor, setLinkedInColor] = useState("transparent");
@@ -15,6 +16,9 @@ export function Contact() {
 
   return (
     <div className="main-container">
+      <header>
+        <NavBar bgColor="#8baac2" />
+      </header>
       <div
         className="text-center fst-italic"
         style={{
@@ -24,7 +28,9 @@ export function Contact() {
         }}
       >
         <h3>Contact</h3>
-        <p className="mx-4">Feel free to reach out or explore my work through the links below!</p>
+        <p className="mx-4">
+          Feel free to reach out or explore my work through the links below!
+        </p>
       </div>
 
       <div className="d-flex flex-wrap justify-content-center">
@@ -94,6 +100,9 @@ export function Contact() {
           </a>
         </div>
       </div>
+      <footer>
+        <Footer bgColor="#8baac2" />
+      </footer>
     </div>
   );
 }

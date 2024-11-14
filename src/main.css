@@ -18,6 +18,15 @@
   min-height: 100vh;
 }
 
+footer {
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.navbar-toggler-icon {
+  filter: opacity(0.6);
+}
+
 .main-container {
   flex: 1;
   display: flex;

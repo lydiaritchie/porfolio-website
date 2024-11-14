@@ -1,16 +1,16 @@
-import elephant from "../graphics/portfolio-projects/design/stickers/elephant.png";
-import nemo from "../graphics/portfolio-projects/design/stickers/nemo.png";
-import hornbill from "../graphics/portfolio-projects/design/stickers/hornbill.png";
-import chowBanBenKru from "../graphics/portfolio-projects/design/stickers/chowBanBenKru.png";
-import notebook from "../graphics/portfolio-projects/design/stickers/notebook.png";
+import elephant from "../../graphics/portfolio-projects/design/stickers/elephant.png";
+import nemo from "../../graphics/portfolio-projects/design/stickers/nemo.png";
+import hornbill from "../../graphics/portfolio-projects/design/stickers/hornbill.png";
+import chowBanBenKru from "../../graphics/portfolio-projects/design/stickers/chowBanBenKru.png";
+import notebook from "../../graphics/portfolio-projects/design/stickers/notebook.png";
 
-import openLogo from "../graphics/portfolio-projects/design/logos/open-logo.png";
-import garuda from "../graphics/portfolio-projects/design/logos/illustrated-garuda.png";
-import mastersThrowdown from "../graphics/portfolio-projects/design/logos/masters-throwdown-logo.png";
-import weightliftingLogo from "../graphics/portfolio-projects/design/logos/weightlifting-logo.png";
-import openyogaLogo from "../graphics/portfolio-projects/design/logos/yoga-logo.png";
-import throwdown2024 from "../graphics/portfolio-projects/design/logos/throwdown-2024.png"
-import throwdown2025 from "../graphics/portfolio-projects/design/logos/throwdown-2025.png"
+import openLogo from "../../graphics/portfolio-projects/design/logos/open-logo.png";
+import garuda from "../../graphics/portfolio-projects/design/logos/illustrated-garuda.png";
+import mastersThrowdown from "../../graphics/portfolio-projects/design/logos/masters-throwdown-logo.png";
+import weightliftingLogo from "../../graphics/portfolio-projects/design/logos/weightlifting-logo.png";
+import openyogaLogo from "../../graphics/portfolio-projects/design/logos/yoga-logo.png";
+import throwdown2024 from "../../graphics/portfolio-projects/design/logos/throwdown-2024.png";
+import throwdown2025 from "../../graphics/portfolio-projects/design/logos/throwdown-2025.png";
 
 const designData = {
   illustrations: [

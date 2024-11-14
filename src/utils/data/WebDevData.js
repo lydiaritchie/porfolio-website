@@ -1,7 +1,8 @@
-import restaurantImage from "../graphics/portfolio-projects/software-engineering/restaurant-reservation-screenshot.png";
-import flashcardImage from "../graphics/portfolio-projects/software-engineering/flashcard-home.png";
-import moviesImage from "../graphics/portfolio-projects/software-engineering/movies-screenshot.png";
-import grubdashImage from "../graphics/portfolio-projects/software-engineering/grubdash-screenshot.png";
+import restaurantImage from "../../graphics/portfolio-projects/software-engineering/restaurant-reservation-screenshot.png";
+import flashcardImage from "../../graphics/portfolio-projects/software-engineering/flashcard-home.png";
+import moviesImage from "../../graphics/portfolio-projects/software-engineering/movies-screenshot.png";
+import grubdashImage from "../../graphics/portfolio-projects/software-engineering/grubdash-screenshot.png";
+
 
 const webDevData = [
     {

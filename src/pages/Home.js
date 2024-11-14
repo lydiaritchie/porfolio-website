@@ -1,25 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavBar } from "../utils/NavBar";
 import DeskComponent from "../graphics/DeskComponent";
-import { brew } from "../utils/api";
-import { ReactComponent as LydiaRitchieVertical } from "../graphics/personal-branding/lydia-ritchie-vertical.svg";
+import { Footer } from "../utils/Footer";
 import { ReactComponent as LydiaRitchieHorizontal } from "../graphics/personal-branding/lydia-ritchie-horizontal.svg";
 
 export function Home() {
   return (
     <div>
-      
-
+      <header>
+        <NavBar bgColor="#8baac2" />
+      </header>
       <div className="main-container">
         <div
           className="d-flex row justify-content-center name-horizontal"
-          style={{ background: "", marginBottom: "-15px", marginTop: "5px"}}
+          style={{ background: "", marginBottom: "-15px", marginTop: "5px" }}
         >
           <LydiaRitchieHorizontal className="" style={{ width: "90%" }} />
 
           <div
             className="d-flex justify-content-center"
-            style={{ color: "#425c77", marginTop: "10px", marginBottom: "5px", fontSize: "4vw" }}
+            style={{
+              color: "#425c77",
+              marginTop: "10px",
+              marginBottom: "5px",
+              fontSize: "4vw",
+            }}
           >
             Software Engineer, Designer, Artist
           </div>
@@ -31,6 +36,9 @@ export function Home() {
           </div>
         </div>
       </div>
+      <footer>
+        <Footer bgColor="#8baac2"/>
+      </footer>
     </div>
   );
 }

@@ -33,20 +33,22 @@ export function NavBar({ bgColor }) {
       </nav>
 
       <nav
-        className="navbar navbar-expand-lg navbar-light d-sm-none d-flex col px-2"
+        className="navbar navbar-expand-lg navbar-light d-sm-none d-flex col px-3"
         style={{ backgroundColor: bgColor }}
       >
-        <a
-          className="py-2 px-2"
+        <button
+          className="py-2 p-0"
           type="button"
           data-toggle="collapse"
           data-target="#smallNavBar"
           aria-controls="smallNavBar"
           aria-expanded="true"
           aria-label="Toggle navigation"
+          style={{backgroundColor: "transparent", border: "0px"}}
+          
         >
           <span className="navbar-toggler-icon"></span>
-        </a>
+        </button>
 
         <div className="collapse navbar-collapse" id="smallNavBar">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">

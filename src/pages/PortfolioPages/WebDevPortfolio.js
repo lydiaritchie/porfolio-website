@@ -1,6 +1,6 @@
 import React from "react";
 import { CardImg } from "react-bootstrap";
-import WebDevData from "../../utils/WebDevData";
+import WebDevData from "../../utils/data/WebDevData";
 
 function WebDevPortfolio() {
   return (
