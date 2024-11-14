@@ -1,10 +1,13 @@
-import React from "react";
 
-export function NavBar({bgColor}) {
+
+
+export function NavBar({ bgColor }) {
   return (
     <div>
-      <nav className="navbar navbar-expand-sm navbar-light d-none d-sm-block"
-      style={{ background: bgColor }}>
+      <nav
+        className="navbar navbar-expand-sm navbar-light d-none d-sm-block"
+        style={{ background: bgColor }}
+      >
         <ul className="navbar-nav justify-content-center ">
           <li className="nav-item px-4">
             <a className="nav-link" href="/">
@@ -31,10 +34,10 @@ export function NavBar({bgColor}) {
 
       <nav
         className="navbar navbar-expand-lg navbar-light d-sm-none d-flex col px-2"
-        style={{ backgroundColor: bgColor}}
+        style={{ backgroundColor: bgColor }}
       >
         <a
-          className="py-2"
+          className="py-2 px-2"
           type="button"
           data-toggle="collapse"
           data-target="#smallNavBar"

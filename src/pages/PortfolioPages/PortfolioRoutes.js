@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {NavLink, useLocation, Outlet } from "react-router-dom";
+import { NavLink, useLocation, Outlet } from "react-router-dom";
 import { NavBar } from "../../utils/NavBar";
 
 export function Portfolio() {
@@ -32,11 +32,7 @@ export function Portfolio() {
 
   return (
     <div className="main-container">
-      <header>
-        <NavBar />
-      </header>
-
-      <div className="d-flex justify-content-center" >
+      <div className="d-flex justify-content-center">
         <div
           className="nav-bar d-flex portfolio-menu"
           style={{ width: "fit-content" }}

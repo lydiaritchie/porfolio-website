@@ -15,9 +15,6 @@ export function Contact() {
 
   return (
     <div className="main-container">
-      <header>
-        <NavBar />
-      </header>
       <div
         className="text-center fst-italic"
         style={{

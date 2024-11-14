@@ -16,14 +16,14 @@ import DesignPortfolio from "./pages/PortfolioPages/DesignPortfolio";
 function App() {
   return (
     <Router>
-      <Routes>
+      <header>
+        <NavBar bgColor="#8baac2" />
+      </header>
+      <Routes className="main-container">
         <Route path="/" element={<Home />} />
         <Route path="/portfolio/*" element={<Portfolio />}>
-        <Route index element={<Navigate to="web-development" replace />} />
-          <Route
-            path="web-development"
-            element={<WebDevPortfolio />}
-          />
+          <Route index element={<Navigate to="web-development" replace />} />
+          <Route path="web-development" element={<WebDevPortfolio />} />
           <Route path="design" element={<DesignPortfolio />} />
           <Route path="pottery" element={<PotteryPortfolio />} />
         </Route>
@@ -32,6 +32,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <footer>
+        <Footer bgColor="#8baac2"/>
+      </footer>
     </Router>
   );
 }

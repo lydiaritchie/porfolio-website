@@ -1,9 +1,15 @@
 import React from "react";
 
-export function Footer(){
-    return (
-        <div className="d-flex align-self-end" style={{}}>
-
-        </div>
-    );
+export function Footer({ bgColor }) {
+  return (
+    <div
+      className="d-flex justify-content-center"
+      style={{ background: bgColor, color: "#425c77" }}
+    >
+      <div className="mx-3 my-2 font-center small">
+        &copy; {new Date().getFullYear()} Your Website Name. All rights
+        reserved.
+      </div>
+    </div>
+  );
 }

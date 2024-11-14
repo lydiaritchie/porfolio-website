@@ -8,9 +8,7 @@ import { ReactComponent as LydiaRitchieHorizontal } from "../graphics/personal-b
 export function Home() {
   return (
     <div>
-      <header>
-        <NavBar bgColor="#8baac2" />
-      </header>
+      
 
       <div className="main-container">
         <div
