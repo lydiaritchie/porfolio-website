@@ -3,6 +3,9 @@ import { NavBar } from "../utils/NavBar";
 import DeskComponent from "../graphics/DeskComponent";
 import { Footer } from "../utils/Footer";
 import { ReactComponent as LydiaRitchieHorizontal } from "../graphics/personal-branding/lydia-ritchie-horizontal.svg";
+import lydiaCeramicsWork from "../graphics/personal-branding/lydia-ceramics-work.jpeg";
+import lydiaHeadshot from "../graphics/personal-branding/lydia-headshot.jpg";
+
 
 export function Home() {
   return (
@@ -35,6 +38,20 @@ export function Home() {
             <DeskComponent />
           </div>
         </div>
+
+        <div style={{marginBottom: "400px"}}>
+          <div className="about-section">
+           
+            <div className="text-center">
+              <img className="headshot" src={lydiaCeramicsWork} />
+            </div>
+            <div>
+
+            </div>
+          </div>
+          
+        </div>
+
       </div>
       <footer>
         <Footer bgColor="#8baac2"/>
@@ -42,5 +59,3 @@ export function Home() {
     </div>
   );
 }
-/*<LydiaRitchieVertical className="d-none d-sm-block"
-          style={{ width: "50%", paddingTop: "10px"}} />*/

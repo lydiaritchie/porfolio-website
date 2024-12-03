@@ -76,9 +76,13 @@ footer {
   transform: translateX(-30px) scale(2);
   transform-origin: top center;
   margin-bottom: 400px;
-  margin-top: -20px;
+  margin-top: 20px;
   width: 100%;
   height: auto;
+}
+
+.more-about-me {
+  transform: translateX(2750px) translateY(3450px) scale(3.5);
 }
 
 .teapot:hover {
@@ -100,8 +104,6 @@ footer {
   width: 200px;
   margin-top: 50px;
   border-radius: 5px;
-
-
 }
 
 
@@ -253,11 +255,15 @@ footer {
 
 /* This is for the home page desk component
    It has a different break point than normal due to the illustraion size */
-@media (min-width: 690px) {
+@media (min-width: 576px) {
   .desk {
     transform: scale(1.4);
     translate: 70px;
     margin-top: -30px;
+  }
+
+  .more-about-me {
+
   }
 
   .lydia-vertical {
