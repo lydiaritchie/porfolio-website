@@ -40,11 +40,7 @@ function PotteryPortfolio() {
     <div>
       {Object.entries(potteryData).map(([category, items]) => (
         <div key={category} className="category-section">
-          <h4
-            className="heading-italic"
-          >
-            {capitalizeCategory(category)}
-          </h4>
+          <h4 className="heading-italic">{capitalizeCategory(category)}</h4>
           <div className="pot-container">
             {items.map((item, index) => {
               const flatIndex = allImages.findIndex(
@@ -55,7 +51,6 @@ function PotteryPortfolio() {
                   <img
                     src={item.image}
                     alt={item.description}
-                    loading="lazy"
                     className="pot-image"
                     onClick={() => handleImageClick(flatIndex)}
                   />
@@ -81,26 +76,31 @@ function PotteryPortfolio() {
             interval={null}
             indicators={false}
             controls={true}
+            wrap={true}
+            touch={true}
             slide
           >
             {allImages.map((item, idx) => (
               <Carousel.Item key={idx}>
                 <div
                   style={{
-                    height: idx === 46 ? "100%" : "600px",
                     overflow: "hidden",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    height: "90vh",
+                    width: "100%",
+                    backgroundColor: "black",
                   }}
                 >
                   <img
-                    className="d-block w-100 h-100"
+                    className="d-block"
                     src={item.image}
                     alt={item.description}
                     style={{
                       objectFit: "cover",
-                      height: "500px",
+                      height: "100%",
+                      width: "auto",
                     }}
                   />
                 </div>
