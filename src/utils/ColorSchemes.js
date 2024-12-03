@@ -1,5 +1,5 @@
 export const ColorSchemes = {
-  BlueGrey: {
+  BlueGreyBase: {
     lightest: "#b5dbf5",
     light: "#a4c6df",
     bg: "#8baac2",
@@ -23,38 +23,6 @@ export const ColorSchemes = {
     title: "#1d4d76",
     shadow: "#507d9a",
   },
-  MutedGreen: {
-    lightest: "#b6d6b0",
-    light: "#92c38e",
-    bg: "#7fa17b",
-    sub: "#5d7c5c",
-    title: "#3b4d3f",
-    shadow: "#6a8b75",
-  },
-  DustyRose: {
-    lightest: "#f2d0d9",
-    light: "#e5b0b8",
-    bg: "#d4969e",
-    sub: "#a67075",
-    title: "#7b4c4a",
-    shadow: "#9e7270",
-  },
-  MutedLavender: {
-    lightest: "#c1b0d7",
-    light: "#a68bb6",
-    bg: "#8b7296",
-    sub: "#6a4d6f",
-    title: "#4a2e4a",
-    shadow: "#7c6379",
-  },
-  SoftTaupe: {
-    lightest: "#e5d9d0",
-    light: "#d1b8a9",
-    bg: "#b89d8a",
-    sub: "#8d7a6c",
-    title: "#5d4d3e",
-    shadow: "#7b6354",
-  },
   MutedBlue: {
     lightest: "#a8c1d1",
     light: "#8fa9c0",
@@ -62,5 +30,29 @@ export const ColorSchemes = {
     sub: "#4e6377",
     title: "#2e3e53",
     shadow: "#5c7482",
+  },
+  FoggyBlue: {
+    lightest: "#dce3f1",
+    light: "#a6b7d5",
+    bg: "#7f96be",
+    sub: "#4c5e77",
+    title: "#2b3d56",
+    shadow: "#5e758e",
+  },
+  PaleBlue: {
+    lightest: "#e8f2fd",
+    light: "#c0d6e9",
+    bg: "#7f97c1",
+    sub: "#4b678b",
+    title: "#2d4054",
+    shadow: "#607b91",
+  },
+  CoolSlate: {
+    lightest: "#cfe2f2",
+    light: "#9db7d4",
+    bg: "#6f8eaf",
+    sub: "#4b6478",
+    title: "#2c3c54",
+    shadow: "#5e7a8f",
   },
 };

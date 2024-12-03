@@ -11,7 +11,6 @@ import teapot from "./home-graphics/blue-teapot.png";
 import flowers from "./home-graphics/flowers.png";
 import { brew } from "../utils/api";
 import teapotError from "../graphics/home-graphics/418-error-msg.png";
-import engineerArtistSubtitle from "../graphics/home-graphics/engineer-artist-subtitle.png";
 
 function DeskComponent() {
   const [brewState, setBrewState] = useState("");
@@ -26,6 +25,7 @@ function DeskComponent() {
       const fetchedBrewResult = await brew("teapot");
       const brewResult = JSON.stringify(fetchedBrewResult);
       setBrewState(brewResult);
+      window.open("about:inspect", "");
       console.log(brewState);
     } catch (error) {
       console.log(error);
@@ -46,8 +46,9 @@ function DeskComponent() {
         <a
           className="teapot"
           target="_blank"
+          rel="noreferrer"
           href="https://github.com/lydiaritchie/portfolio-website"
-          style={{ cursor: 'default' }}
+          style={{ cursor: "default" }}
         >
           <image
             transform="translate(3450 570) scale(.769)"
@@ -131,9 +132,12 @@ function DeskComponent() {
 
         <image transform="translate(5300 2550) scale(.30)" href={flowerMug} />
 
-        <a className="teapot" onClick={handleTeapot}>
-          <image transform="translate(5850 2400) scale(.75)" href={teapot} />
-        </a>
+        <image
+          className="teapot"
+          onClick={handleTeapot}
+          transform="translate(5850 2400) scale(.75)"
+          href={teapot}
+        />
 
         <path
           transform="translate(6080 2485) scale(0.2)"

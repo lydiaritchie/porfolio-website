@@ -7,6 +7,5 @@ export function getRandomColorScheme() {
   const randomIndex = Math.floor(Math.random() * keys.length);
   const randomKey = keys[randomIndex];
   const theme = ColorSchemes[randomKey];
-  console.log(theme);
   return theme;
 }

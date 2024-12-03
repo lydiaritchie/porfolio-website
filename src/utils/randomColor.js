@@ -1,25 +1,25 @@
 
 export function getRandomColor() {
   const colors = [
-    "#A4BFEB",  // light blue
-    "#AEADF0",  // light purple/blue
-    "#3e92cc",  // blue
-    "#89cff0",  // light blue
-    "#0066b2",  // blue
-    "#6699CC",  // blue
-    "#7ea3cc",  // light blue
-    "#6cb4ee",  // light blue
-    "#255c99",  // blue
-    "#b0c4de",  // light blue
-    "#a4bfeb",  // light blue
-    "#6082b6",  // blue
-    "#4b9cd3",  // blue
-    "#87cefa",  // light blue
-    "#add8e6",  // light blue
-    "#73c2fb",  // light blue
-    "#b4d4ee",  // light blue
-    "#e0ffff",  // light cyan
-  ];
+    "#A4BFEB",  // Light cornflower blue
+    "#AEADF0",  // Pale periwinkle blue
+    "#3e92cc",  // Rich cerulean blue
+    "#89cff0",  // Soft baby blue
+    "#0066b2",  // Deep sapphire blue
+    "#6699CC",  // Muted steel blue
+    "#7ea3cc",  // Light grayish-blue
+    "#6cb4ee",  // Bright azure blue
+    "#255c99",  // Dark slate blue
+    "#b0c4de",  // Soft powder blue
+    "#a4bfeb",  // Moderate sky blue
+    "#6082b6",  // Dusty denim blue
+    "#4b9cd3",  // Vivid cobalt blue
+    "#87cefa",  // Light sky blue
+    "#add8e6",  // Pale pastel blue
+    "#73c2fb",  // Medium light blue
+    "#b4d4ee",  // Frosty pale blue
+    "#e0ffff",  // Very pale aqua blue
+  ];  
   
   
   const randomColor = () =>

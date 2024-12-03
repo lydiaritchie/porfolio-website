@@ -4,7 +4,7 @@ import linkedInIcon from "../graphics/icons/linkedIn-icon.svg";
 import githubIcon from "../graphics/icons/github-icon.svg";
 import emailIcon from "../graphics/icons/email-bg-icon.svg";
 import instaIcon from "../graphics/icons/insta-icon.svg";
-import { getRandomColor } from "../utils/RandomColor";
+import { getRandomColor } from "../utils/randomColor";
 import { NavBar } from "../utils/NavBar";
 import { Footer } from "../utils/Footer";
 
@@ -27,7 +27,7 @@ export function Contact() {
           marginTop: "10px",
         }}
       >
-        <h3>Contact</h3>
+        <h3></h3>
         <p className="mx-4">
           Feel free to reach out or explore my work through the links below!
         </p>
