@@ -39,12 +39,8 @@ export function Home() {
           </div>
         </div>
 
-       
-
         <div className="about-section">
-          <div  className="about-title">
-            <AboutTitle />
-          </div>
+
           <div className="headshot-wrapper">
             <img className="headshot" src={lydiaCeramicsWork} />
           </div>
