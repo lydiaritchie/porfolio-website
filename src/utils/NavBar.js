@@ -20,11 +20,6 @@ export function NavBar({ bgColor }) {
             </a>
           </li>
           <li className="nav-item px-4">
-            <a className="nav-link" href="/about">
-              About
-            </a>
-          </li>
-          <li className="nav-item px-4">
             <a className="nav-link" href="/contact">
               Contact
             </a>
@@ -60,11 +55,6 @@ export function NavBar({ bgColor }) {
             <li className="nav-item active">
               <a className="nav-link" href="/portfolio">
                 Portfolio
-              </a>
-            </li>
-            <li className="nav-item active">
-              <a className="nav-link" href="/about">
-                About
               </a>
             </li>
             <li className="nav-item active">
