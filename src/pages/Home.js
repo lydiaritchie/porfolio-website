@@ -5,7 +5,7 @@ import { Footer } from "../utils/Footer";
 import { ReactComponent as LydiaRitchieHorizontal } from "../graphics/personal-branding/lydia-ritchie-horizontal.svg";
 import lydiaCeramicsWork from "../graphics/personal-branding/lydia-ceramics-work.jpeg";
 import lydiaHeadshot from "../graphics/personal-branding/lydia-headshot.jpg";
-
+import { AboutTitle } from "../graphics/home-graphics/about-title.js";
 
 export function Home() {
   return (
@@ -39,22 +39,21 @@ export function Home() {
           </div>
         </div>
 
-        <div style={{marginBottom: "400px"}}>
-          <div className="about-section">
-           
-            <div className="text-center">
-              <img className="headshot" src={lydiaCeramicsWork} />
-            </div>
-            <div>
+       
 
-            </div>
+        <div className="about-section">
+          <div  className="about-title">
+            <AboutTitle />
           </div>
-          
-        </div>
+          <div className="headshot-wrapper">
+            <img className="headshot" src={lydiaCeramicsWork} />
+          </div>
 
+          <div></div>
+        </div>
       </div>
       <footer>
-        <Footer bgColor="#8baac2"/>
+        <Footer bgColor="#8baac2" />
       </footer>
     </div>
   );
