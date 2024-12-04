@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { NavBar } from "../utils/NavBar";
 import DeskComponent from "../graphics/DeskComponent";
 import { Footer } from "../utils/Footer";
@@ -34,18 +34,19 @@ export function Home() {
         </div>
 
         <div className="desk-container">
-          <div className="desk" style={{ backgroundColor: "" }}>
             <DeskComponent />
-          </div>
         </div>
 
-        <div className="about-section">
-
-          <div className="headshot-wrapper">
+        <div className="">
+          <div className="">
             <img className="headshot" src={lydiaCeramicsWork} />
-          </div>
 
-          <div></div>
+            <div className="about-intro">
+              My name is Lydia and I am a full stack engineer, designer, and
+              artist. I enjoy problem solving, coding challenges and creating
+              responsive designs.
+            </div>
+          </div>
         </div>
       </div>
       <footer>

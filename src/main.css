@@ -66,20 +66,22 @@ footer {
 }
 
 .desk-container {
-  display: flex;
-  position: relative;
   overflow: hidden;
-  z-index: 1;
+  height: auto;
+  width: 100%;
+  padding-bottom: 50%;
+  margin-top: -20px;
 }
 
 .desk {
-  transform: translateX(-30px) scale(2);
+  transform: translateX(-40px) scale(2);
   transform-origin: top center;
-  margin-bottom: 400px;
-  margin-top: -20px;
+  position: relative;
   width: 100%;
   height: auto;
-  transition: all 0.3s ease;
+  object-fit: contain;
+  transition: all 0.2s ease;
+
 }
 
 .teapot:hover {
@@ -89,25 +91,31 @@ footer {
 .about-title {
   transform: translateX(2600px) translateY(3600px) scale(5.3) rotate(-8deg);
   transition: all 0.3s ease;
-  z-index: 2;
 }
 
 .about-section {
-  margin-top: -100px;
-  width: 100%;
-  height: 500px;
-  z-index: 2;
-  position: relative;
+  color: #173c5a;
+  background-color: rgb(190, 190, 227);
+}
+
+.about-section-1 {
+  justify-content: top;
+  align-items: top;
+  flex-direction: column;
+}
+
+.about-intro {
+  text-align: start;
+  margin: 20px 40px 0px 40px;
 }
 
 .headshot-wrapper {
-  text-align: right;
+  background-color: pink;
 }
 
 .headshot {
-  width: 140px;
+  width: 50%;
   border-radius: 3px;
-  margin-right: 40px;
   box-shadow: 0px 0px 8px #6d8698;
 }
 
@@ -250,7 +258,14 @@ footer {
 
 /* This is for the home page desk component
    It has a different break point than normal due to the illustraion size */
-@media (min-width: 576px) {
+
+   @media (min-width: 576px) {
+
+    .desk-container {
+      height:fit-content;
+      padding-bottom: 20%;
+    }
+
   .desk {
     transform: scale(1.4);
     translate: 70px;
@@ -261,17 +276,13 @@ footer {
     transform: scale(6.6);
     translate: 1350px 380px;
   }
-
+  
   .subtitle {
     font-size: 128px;
     fill: #425c77;
     translate: 1430px 1800px;
-    /*
-    rotate: 10.5deg;
-    transform: skew(12deg);
-    */
   }
-
+ 
   .leaf-vase {
     translate: -2000px 300px;
   }
@@ -295,7 +306,6 @@ footer {
   .about-title {
     transform: translateX(900px) translateY(3300px) scale(6) rotate(-8deg);
     transition: all 0.3s ease;
-    z-index: 2;
   }
 
   .headshot-wrapper {
@@ -309,3 +319,4 @@ footer {
     box-shadow: 0px 0px 8px #6d8698;
   }
 }
+  
