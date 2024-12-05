@@ -40,7 +40,7 @@ function PotteryPortfolio() {
     <div>
       {Object.entries(potteryData).map(([category, items]) => (
         <div key={category} className="category-section">
-          <h4 className="heading-italic">{capitalizeCategory(category)}</h4>
+          <h4 className="heading-italic mt-4">{capitalizeCategory(category)}</h4>
           <div className="pot-container">
             {items.map((item, index) => {
               const flatIndex = allImages.findIndex(

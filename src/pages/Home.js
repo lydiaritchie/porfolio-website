@@ -49,7 +49,7 @@ export function Home() {
             </div>
           </div>
           <div className="about-section-2">
-            Education Box
+            <h6 className="heading-italic">Education</h6>
           </div>
 
 

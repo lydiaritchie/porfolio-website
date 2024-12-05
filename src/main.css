@@ -46,13 +46,11 @@ footer {
 .heading-italic {
   color: #425c77;
   font-style: oblique;
-  margin-top: 20px;
 }
 
 .heading-bold {
   color: #425c77;
   font-weight: 600;
-  margin-top: 10px;
 }
 
 .contact-btn {
@@ -99,7 +97,6 @@ footer {
 .about-section {
   display: flex;
   flex-direction: column;
-  color: #173c5a;
   margin-bottom: 40px;
 }
 
@@ -113,6 +110,7 @@ footer {
 .about-intro {
   padding: 20px;
   text-align: center;
+  color: #173c5a;
 }
 
 .headshot {
@@ -120,6 +118,15 @@ footer {
   border-radius: 3px;
   box-shadow: 0px 0px 8px #6d8698;
 }
+
+.about-section-2 {
+  width: 70%;
+  align-self: center;
+  background-color:#dfefeb;
+  margin: 25px;
+  height: 700px;
+}
+
 
 .portfolio-menu {
   flex-direction: column;

@@ -42,7 +42,7 @@ function WebDevPortfolio() {
             <div className="card web-dev-card">
               <div className="card-body">
                 <CardImg src={project.image} />
-                <h5 className="card-title heading-bold">{project.title}</h5>
+                <h5 className="card-title heading-bold mt-2">{project.title}</h5>
                 <div className="link-container">
                   <a
                     className="link-btns"
