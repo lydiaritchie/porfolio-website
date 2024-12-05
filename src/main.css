@@ -16,6 +16,10 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 footer {
@@ -70,18 +74,17 @@ footer {
   height: auto;
   width: 100%;
   padding-bottom: 50%;
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 .desk {
-  transform: translateX(-40px) scale(2);
+  transform: translateX(-30px) scale(2);
   transform-origin: top center;
   position: relative;
   width: 100%;
   height: auto;
   object-fit: contain;
   transition: all 0.2s ease;
-
 }
 
 .teapot:hover {
@@ -94,27 +97,26 @@ footer {
 }
 
 .about-section {
+  display: flex;
+  flex-direction: column;
   color: #173c5a;
-  background-color: rgb(190, 190, 227);
+  margin-bottom: 40px;
 }
 
 .about-section-1 {
-  justify-content: top;
-  align-items: top;
-  flex-direction: column;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-intro {
-  text-align: start;
-  margin: 20px 40px 0px 40px;
-}
-
-.headshot-wrapper {
-  background-color: pink;
+  padding: 20px;
+  text-align: center;
 }
 
 .headshot {
-  width: 50%;
+  width: 40%;
   border-radius: 3px;
   box-shadow: 0px 0px 8px #6d8698;
 }
@@ -176,7 +178,7 @@ footer {
   background-color: #b5dbf5;
   border-radius: 5px;
   text-decoration: none;
-  width: 70px;
+  width: 75px;
 }
 
 .link-btns:hover {
@@ -259,16 +261,14 @@ footer {
 /* This is for the home page desk component
    It has a different break point than normal due to the illustraion size */
 
-   @media (min-width: 576px) {
-
-    .desk-container {
-      height:fit-content;
-      padding-bottom: 20%;
-    }
+@media (min-width: 576px) {
+  .desk-container {
+    padding-bottom: 20%;
+  }
 
   .desk {
     transform: scale(1.4);
-    translate: 70px;
+    translate: 60px;
     margin-top: -30px;
   }
 
@@ -276,13 +276,13 @@ footer {
     transform: scale(6.6);
     translate: 1350px 380px;
   }
-  
+
   .subtitle {
-    font-size: 128px;
+    font-size: 115px;
     fill: #425c77;
-    translate: 1430px 1800px;
+    translate: 1400px 1800px;
   }
- 
+
   .leaf-vase {
     translate: -2000px 300px;
   }
@@ -304,19 +304,44 @@ footer {
   }
 
   .about-title {
-    transform: translateX(900px) translateY(3300px) scale(6) rotate(-8deg);
+    transform: translateX(900px) translateY(3300px) scale(4) rotate(-8deg);
     transition: all 0.3s ease;
   }
 
-  .headshot-wrapper {
-    text-align: right;
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    z-index: 2;
+  }
+
+  .about-section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  .about-intro {
+    text-align: left;
   }
 
   .headshot {
-    width: 140px;
+    width: 150px;
     border-radius: 3px;
-    margin-right: 40px;
     box-shadow: 0px 0px 8px #6d8698;
   }
+
+  .about-section-2 {
+    width: 100%;
+    background-color: #dfefeb;
+    margin: 25px;
+  }
 }
-  
+
+@media (min-width: 796px) {
+  .about-section-1 {
+    display: flex;
+    flex-direction: row;
+  }
+}

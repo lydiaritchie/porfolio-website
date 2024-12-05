@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { NavBar } from "../utils/NavBar";
 import DeskComponent from "../graphics/DeskComponent";
 import { Footer } from "../utils/Footer";
@@ -34,12 +34,13 @@ export function Home() {
         </div>
 
         <div className="desk-container">
-            <DeskComponent />
+          <DeskComponent />
         </div>
 
-        <div className="">
-          <div className="">
-            <img className="headshot" src={lydiaCeramicsWork} />
+        <div className="about-section d-flex">
+
+          <div className="about-section-1">
+            <img className="headshot" src={lydiaHeadshot} />
 
             <div className="about-intro">
               My name is Lydia and I am a full stack engineer, designer, and
@@ -47,7 +48,13 @@ export function Home() {
               responsive designs.
             </div>
           </div>
+          <div className="about-section-2">
+            Education Box
+          </div>
+
+
         </div>
+
       </div>
       <footer>
         <Footer bgColor="#8baac2" />
