@@ -38,7 +38,7 @@ export function Home() {
         </div>
 
         <div className="about-section d-flex">
-
+          {/* Beginning of about-section-1 */}
           <div className="about-section-1">
             <img className="headshot" src={lydiaHeadshot} />
 
@@ -48,13 +48,61 @@ export function Home() {
               responsive designs.
             </div>
           </div>
+          {/* ^ End of about-section-1 */}
+
+          {/* Beginning of about-section-2 */}
           <div className="about-section-2">
-            <h6 className="heading-italic">Education</h6>
+             {/* Education start */}
+            <div>
+              <h6 className="heading-bold mb-3">Education</h6>
+
+              <div className="d-flex justify-content-between">
+                <div className="col-5 year-title">2024 </div>
+                <div className="col-8">
+                  Chegg Skills, Software Engineering Trainee
+                </div>
+              </div>
+
+              <div className="d-flex justify-content-between mt-2">
+                <div className="col-5 year-title">2019 - 2023</div>
+                <div className="col-8">BA, Studio Art, Wheaton College</div>
+              </div>
+            </div>
+            {/* ^ Education end */}
+
+            {/* Experience start */}
+            <div className="mt-4">
+              <h6 className="heading-bold mb-3" style={{ color: "" }}>
+                Experience
+              </h6>
+
+              <div className="d-flex justify-content-between">
+                <div className="col-5 year-title">2023 - Present </div>
+                <div className="col-7">
+                  Media Production Lead -{" "}
+                  <a className="inline-link" href="https://isdsi.org/">
+                    ISDSI
+                  </a>{" "}
+                </div>
+              </div>
+
+              <div className="d-flex justify-content-between mt-2">
+                <div className="col-5 year-title">2023 - Present</div>
+                <div className="col-7">
+                  Graphic Designer, Media Production Lead -{" "}
+                  <a
+                    className="inline-link"
+                    href="https://www.cfcnxfitness.com/"
+                  >
+                    Crossfit Chiang Mai
+                  </a>{" "}
+                </div>
+              </div>
+            </div>
+            {/* ^ Education end */}
           </div>
-
-
+          {/* ^ End of about-section-2 */}
         </div>
-
       </div>
       <footer>
         <Footer bgColor="#8baac2" />

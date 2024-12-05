@@ -17,7 +17,7 @@
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  font-family: "Montserrat", sans-serif;;
+  font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -121,12 +121,27 @@ footer {
 
 .about-section-2 {
   width: 70%;
+  font-size: 13px;
   align-self: center;
   background-color:#dfefeb;
   margin: 25px;
   height: 700px;
+  padding: 20px;
+  color: #6d8698;
+  border-radius: 5px;
 }
 
+.year-title {
+  font-weight: bold;
+  padding-right: 10px;
+  color: #8baac2;
+}
+
+.inline-link {
+  text-decoration: underline;
+  color: inherit;
+
+}
 
 .portfolio-menu {
   flex-direction: column;
