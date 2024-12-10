@@ -98,6 +98,7 @@ export function Home() {
                   </a>{" "}
                 </div>
               </div>
+              
             </div>
             {/* ^ Education end */}
           </div>

@@ -1,6 +1,3 @@
-
-
-
 export function NavBar({ bgColor }) {
   return (
     <div>
@@ -39,8 +36,7 @@ export function NavBar({ bgColor }) {
           aria-controls="smallNavBar"
           aria-expanded="true"
           aria-label="Toggle navigation"
-          style={{backgroundColor: "transparent", border: "0px"}}
-          
+          style={{ backgroundColor: "transparent", border: "0px" }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
