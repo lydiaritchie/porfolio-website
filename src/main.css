@@ -177,6 +177,11 @@ footer {
   margin: 3px 6px 3px 0px;
 }
 
+.adobe-icon {
+  width: 35px;
+  margin: 10px 3px 3px 3px;
+}
+
 .portfolio-menu {
   flex-direction: column;
   background-color: #a4c6df;

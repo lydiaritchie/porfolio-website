@@ -5,9 +5,15 @@ import { Footer } from "../utils/Footer";
 import { ReactComponent as LydiaRitchieHorizontal } from "../graphics/personal-branding/lydia-ritchie-horizontal.svg";
 import lydiaCeramicsWork from "../graphics/personal-branding/lydia-ceramics-work.jpeg";
 import lydiaHeadshot from "../graphics/personal-branding/lydia-headshot.jpg";
-import { AboutTitle } from "../graphics/home-graphics/about-title.js";
+import illustratorIcon from "../graphics/icons/illustrator-icon.svg";
+import indesignIcon from "../graphics/icons/indesign-icon.svg";
+import lightroomIcon from "../graphics/icons/lightroom-icon.svg";
+import photoshopIcon from "../graphics/icons/photoshop-icon.svg";
+import premiereIcon from "../graphics/icons/premiere-icon.svg";
 
 export function Home() {
+  const adobeIconColor = "#6d8698";
+
   return (
     <div>
       <header>
@@ -42,7 +48,7 @@ export function Home() {
           <div className="about-col-1 col-12 col-md-8">
             {/* Beginning of about-section-1 */}
             <div className="about-section-1">
-              <img className="headshot" src={lydiaHeadshot} />
+              <img className="headshot" alt="Lydia Ritchie headshot" src={lydiaHeadshot} />
 
               <div className="about-intro">
                 My name is Lydia and I am a full stack engineer. I have also
@@ -57,9 +63,7 @@ export function Home() {
 
             {/* Start of skills section */}
             <div className="skills-section">
-              <h6 className="heading-bold mb-2 tech-title">
-                Technical Skills
-              </h6>
+              <h6 className="heading-bold mb-2 tech-title">Technical Skills</h6>
               <div className="d-flex tech-skills-container">
                 <div className="tech-skills">React</div>
                 <div className="tech-skills">HTML</div>
@@ -71,16 +75,38 @@ export function Home() {
                 <div className="tech-skills">Bootstrap</div>
               </div>
 
-              {/* PUT ADOBE ICONS HERE */}
+              <div>
+                <img
+                  className="adobe-icon"
+                  src={illustratorIcon}
+                  alt="Adobe Illustrator icon"
+                />
+                <img
+                  className="adobe-icon"
+                  src={photoshopIcon}
+                  alt="Adobe Photoshop icon"
+                />
+                <img
+                  className="adobe-icon"
+                  src={indesignIcon}
+                  alt="Adobe InDesign icon"
+                />
+                <img
+                  className="adobe-icon"
+                  src={lightroomIcon}
+                  alt="Adobe Lightroom icon"
+                />
+                <img
+                  className="adobe-icon"
+                  src={premiereIcon}
+                  alt="Adobe Premiere Pro icon"
+                />
+              </div>
             </div>
 
             <div className="skills-section mt-4">
-              <h6 className="heading-bold mb-2 tech-title">
-                Soft Skills
-              </h6>
-              <div className="d-flex tech-skills-container">
-               
-              </div>
+              <h6 className="heading-bold mb-2 tech-title">Soft Skills</h6>
+              <div className="d-flex tech-skills-container"></div>
             </div>
 
             {/* ^ End of skills section */}
