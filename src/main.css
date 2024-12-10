@@ -121,6 +121,7 @@ footer {
 .about-intro {
   margin-bottom: 20px;
   margin-top: 20px;
+  width: 90%;
   text-align: center;
 }
 
@@ -175,6 +176,10 @@ footer {
   border-radius: 10px;
   padding: 0px 5px 0px 5px;
   margin: 3px 6px 3px 0px;
+}
+
+.adobe-icon-container {
+  justify-self: center;
 }
 
 .adobe-icon {
@@ -407,7 +412,8 @@ footer {
 
   .about-intro {
     text-align: left;
-    margin-top: 0px;
+    margin: 0px;
+    align-self: center;
     width: 100%;
     margin-left: 20px;
   }
@@ -437,4 +443,9 @@ footer {
   .tech-skills-container {
     justify-content: left;
   }
+
+  .adobe-icon-container {
+    justify-self: left;
+  }
+  
 }

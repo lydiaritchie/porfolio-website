@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavBar } from "../utils/NavBar";
 import DeskComponent from "../graphics/DeskComponent";
 import { Footer } from "../utils/Footer";
 import { ReactComponent as LydiaRitchieHorizontal } from "../graphics/personal-branding/lydia-ritchie-horizontal.svg";
-import lydiaCeramicsWork from "../graphics/personal-branding/lydia-ceramics-work.jpeg";
 import lydiaHeadshot from "../graphics/personal-branding/lydia-headshot.jpg";
 import illustratorIcon from "../graphics/icons/illustrator-icon.svg";
 import indesignIcon from "../graphics/icons/indesign-icon.svg";
@@ -12,8 +11,6 @@ import photoshopIcon from "../graphics/icons/photoshop-icon.svg";
 import premiereIcon from "../graphics/icons/premiere-icon.svg";
 
 export function Home() {
-  const adobeIconColor = "#6d8698";
-
   return (
     <div>
       <header>
@@ -48,15 +45,18 @@ export function Home() {
           <div className="about-col-1 col-12 col-md-8">
             {/* Beginning of about-section-1 */}
             <div className="about-section-1">
-              <img className="headshot" alt="Lydia Ritchie headshot" src={lydiaHeadshot} />
+              <img
+                className="headshot"
+                alt="Lydia Ritchie headshot"
+                src={lydiaHeadshot}
+              />
 
               <div className="about-intro">
-                My name is Lydia and I am a full stack engineer. I have also
-                have experience in graphic design, illustration and video
-                production. I have project based experience, a strong drive for
-                self-motivation and creative problem solving skills. My art
-                background provides me with a good eye for design and artistic
-                creativity. I was born and raised in Thailand!
+              My name is Lydia, and I am a full-stack engineer with a strong foundation in graphic design, illustration, video production, and pottery.  My experience is largely project based,
+                I am strongly self driven, and have demonstrated creative
+                problem solving skills. My background in art provides me with a
+                good eye for design and artistic creativity. I was born and
+                raised in Thailand!
               </div>
             </div>
             {/* ^ End of about-section-1 */}
@@ -75,7 +75,7 @@ export function Home() {
                 <div className="tech-skills">Bootstrap</div>
               </div>
 
-              <div>
+              <div className="adobe-icon-container">
                 <img
                   className="adobe-icon"
                   src={illustratorIcon}
@@ -104,14 +104,10 @@ export function Home() {
               </div>
             </div>
 
-            <div className="skills-section mt-4">
-              <h6 className="heading-bold mb-2 tech-title">Soft Skills</h6>
-              <div className="d-flex tech-skills-container"></div>
-            </div>
-
             {/* ^ End of skills section */}
           </div>
 
+          {/* Start of col-2 */}
           <div className="about-col-2 col-12 col-md-4">
             {/* Beginning of education-section */}
             <div className="education-section">
@@ -142,7 +138,7 @@ export function Home() {
                 <div className="d-flex justify-content-between">
                   <div className="col-5 year-title">2023 - Present </div>
                   <div className="col-7">
-                    Media Production Lead -{" "}
+                    Media Production Lead, Illustrator -{" "}
                     <a className="inline-link" href="https://isdsi.org/">
                       ISDSI
                     </a>{" "}
@@ -152,7 +148,7 @@ export function Home() {
                 <div className="d-flex justify-content-between mt-2">
                   <div className="col-5 year-title">2023 - Present</div>
                   <div className="col-7">
-                    Graphic Designer, Media Production Lead -{" "}
+                    Media Production Lead, Graphic Designer -{" "}
                     <a
                       className="inline-link"
                       href="https://www.cfcnxfitness.com/"
@@ -166,6 +162,7 @@ export function Home() {
             </div>
             {/* ^ End of education-section */}
           </div>
+          {/* ^ End of col-2 */}
         </div>
       </div>
       <footer>
