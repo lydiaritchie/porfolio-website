@@ -59,7 +59,7 @@ function DeskComponent() {
           style={{ cursor: "default" }}
         >
           <image
-            transform="translate(3450 570) scale(.769)"
+            transform="translate(3607 563) scale(1.01)"
             href={vscodeScreenshot}
           />
         </a>
