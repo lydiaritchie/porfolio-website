@@ -37,72 +37,109 @@ export function Home() {
           <DeskComponent />
         </div>
 
-        <div className="about-section d-flex">
-          {/* Beginning of about-section-1 */}
-          <div className="about-section-1">
-            <img className="headshot" src={lydiaHeadshot} />
+        <div className="about d-flex row">
+          {/* Beginning of about-col-1 */}
+          <div className="about-col-1 col-12 col-md-8">
+            {/* Beginning of about-section-1 */}
+            <div className="about-section-1">
+              <img className="headshot" src={lydiaHeadshot} />
 
-            <div className="about-intro">
-              My name is Lydia and I am a full stack engineer, designer, and
-              artist. I enjoy problem solving, coding challenges and creating
-              responsive designs.
-            </div>
-          </div>
-          {/* ^ End of about-section-1 */}
-
-          {/* Beginning of about-section-2 */}
-          <div className="about-section-2">
-             {/* Education start */}
-            <div>
-              <h6 className="heading-bold mb-3">Education</h6>
-
-              <div className="d-flex justify-content-between">
-                <div className="col-5 year-title">2024 </div>
-                <div className="col-8">
-                  Chegg Skills, Software Engineering Trainee
-                </div>
-              </div>
-
-              <div className="d-flex justify-content-between mt-2">
-                <div className="col-5 year-title">2019 - 2023</div>
-                <div className="col-8">BA, Studio Art, Wheaton College</div>
+              <div className="about-intro">
+                My name is Lydia and I am a full stack engineer. I have also
+                have experience in graphic design, illustration and video
+                production. I have project based experience, a strong drive for
+                self-motivation and creative problem solving skills. My art
+                background provides me with a good eye for design and artistic
+                creativity. I was born and raised in Thailand!
               </div>
             </div>
-            {/* ^ Education end */}
+            {/* ^ End of about-section-1 */}
 
-            {/* Experience start */}
-            <div className="mt-4">
-              <h6 className="heading-bold mb-3" style={{ color: "" }}>
-                Experience
+            {/* Start of skills section */}
+            <div className="skills-section">
+              <h6 className="heading-bold mb-2 tech-title">
+                Technical Skills
               </h6>
-
-              <div className="d-flex justify-content-between">
-                <div className="col-5 year-title">2023 - Present </div>
-                <div className="col-7">
-                  Media Production Lead -{" "}
-                  <a className="inline-link" href="https://isdsi.org/">
-                    ISDSI
-                  </a>{" "}
-                </div>
+              <div className="d-flex tech-skills-container">
+                <div className="tech-skills">React</div>
+                <div className="tech-skills">HTML</div>
+                <div className="tech-skills">CSS</div>
+                <div className="tech-skills">RESTful API</div>
+                <div className="tech-skills">Node.JS</div>
+                <div className="tech-skills">Express</div>
+                <div className="tech-skills">PostgreSQL</div>
+                <div className="tech-skills">Bootstrap</div>
               </div>
 
-              <div className="d-flex justify-content-between mt-2">
-                <div className="col-5 year-title">2023 - Present</div>
-                <div className="col-7">
-                  Graphic Designer, Media Production Lead -{" "}
-                  <a
-                    className="inline-link"
-                    href="https://www.cfcnxfitness.com/"
-                  >
-                    Crossfit Chiang Mai
-                  </a>{" "}
-                </div>
-              </div>
-              
+              {/* PUT ADOBE ICONS HERE */}
             </div>
-            {/* ^ Education end */}
+
+            <div className="skills-section mt-4">
+              <h6 className="heading-bold mb-2 tech-title">
+                Soft Skills
+              </h6>
+              <div className="d-flex tech-skills-container">
+               
+              </div>
+            </div>
+
+            {/* ^ End of skills section */}
           </div>
-          {/* ^ End of about-section-2 */}
+
+          <div className="about-col-2 col-12 col-md-4">
+            {/* Beginning of education-section */}
+            <div className="education-section">
+              {/* Education start */}
+              <div>
+                <h6 className="heading-bold mb-3">Education</h6>
+
+                <div className="d-flex justify-content-between">
+                  <div className="col-5 year-title">2024 </div>
+                  <div className="col-7">
+                    Chegg Skills, Software Engineering Trainee
+                  </div>
+                </div>
+
+                <div className="d-flex justify-content-between mt-2">
+                  <div className="col-5 year-title">2019 - 2023</div>
+                  <div className="col-7">BA, Studio Art, Wheaton College</div>
+                </div>
+              </div>
+              {/* ^ Education end */}
+
+              {/* Experience start */}
+              <div className="mt-4">
+                <h6 className="heading-bold mb-3" style={{ color: "" }}>
+                  Experience
+                </h6>
+
+                <div className="d-flex justify-content-between">
+                  <div className="col-5 year-title">2023 - Present </div>
+                  <div className="col-7">
+                    Media Production Lead -{" "}
+                    <a className="inline-link" href="https://isdsi.org/">
+                      ISDSI
+                    </a>{" "}
+                  </div>
+                </div>
+
+                <div className="d-flex justify-content-between mt-2">
+                  <div className="col-5 year-title">2023 - Present</div>
+                  <div className="col-7">
+                    Graphic Designer, Media Production Lead -{" "}
+                    <a
+                      className="inline-link"
+                      href="https://www.cfcnxfitness.com/"
+                    >
+                      Crossfit Chiang Mai
+                    </a>{" "}
+                  </div>
+                </div>
+              </div>
+              {/* ^ Education end */}
+            </div>
+            {/* ^ End of education-section */}
+          </div>
         </div>
       </div>
       <footer>

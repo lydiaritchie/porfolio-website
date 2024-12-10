@@ -18,6 +18,8 @@
   min-height: 100vh;
   margin: 0;
   font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", serif;
+
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -94,52 +96,85 @@ footer {
   transition: all 0.3s ease;
 }
 
-.about-section {
+.about {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  align-content: center;
+  color: #173c5a;
+}
+
+.about-col-1 {
+  padding: 0px 30px 20px 30px;
+}
+
+.about-col-2 {
+  padding: 0px 30px 0px 30px;
 }
 
 .about-section-1 {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .about-intro {
-  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center;
-  color: #173c5a;
 }
 
 .headshot {
-  width: 40%;
+  width: 200px;
   border-radius: 3px;
-  box-shadow: 0px 0px 8px #6d8698;
+  /*box-shadow: 0px 0px 8px #6d8698;*/
 }
 
-.about-section-2 {
-  width: 70%;
+.education-section {
   font-size: 13px;
-  align-self: center;
-  background-color: #dfefeb;
-  margin: 25px;
-  height: 700px;
-  padding: 20px;
-  color: #6d8698;
+  background-color: #a4c6df;
+  height: fit-content;
+  padding: 20px 20px 25px 20px;
+  color: #173c5a;
   border-radius: 5px;
 }
 
 .year-title {
   font-weight: bold;
   padding-right: 10px;
-  color: #8baac2;
+  color: #5a81aa;
 }
 
 .inline-link {
   text-decoration: underline;
   color: inherit;
+}
+
+.tech-title {
+  text-align: center;
+  color: #173c5a;
+}
+
+.skills-section {
+  width: 60%;
+  justify-self: center;
+}
+
+.tech-skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-skills {
+  width: fit-content;
+  border-width: 1px;
+  color: #173c5a;
+  background-color: #b5dbf5;
+  border-radius: 10px;
+  padding: 0px 5px 0px 5px;
+  margin: 3px 6px 3px 0px;
 }
 
 .portfolio-menu {
@@ -293,7 +328,7 @@ footer {
 /* This is for the home page desk component
    It has a different break point than normal due to the illustraion size */
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .desk-container {
     padding-bottom: 20%;
   }
@@ -335,45 +370,66 @@ footer {
     display: none !important;
   }
 
+  .about {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    margin: -50px 0px 10px 0px;
+    padding: 0px 10px 0px 10px;
+  }
+
   .about-title {
     transform: translateX(900px) translateY(3300px) scale(4) rotate(-8deg);
     transition: all 0.3s ease;
   }
 
-  .about-section {
+  .about-col-1 {
     display: flex;
-    flex-direction: row;
-    margin-top: -50px;
-    z-index: 2;
+    flex-direction: column;
+  }
+
+  .about-col-2 {
+    display: flex;
+    flex-direction: column;
   }
 
   .about-section-1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: fit-content;
     width: 100%;
-    margin-left: 50px;
   }
 
   .about-intro {
     text-align: left;
+    margin-top: 0px;
+    width: 100%;
+    margin-left: 20px;
   }
 
   .headshot {
     width: 150px;
     border-radius: 3px;
-    box-shadow: 0px 0px 8px #6d8698;
+    align-self: flex-start;
   }
 
-  .about-section-2 {
-    width: 100%;
-    background-color: #dfefeb;
-    margin: 25px;
-  }
-}
-
-@media (min-width: 796px) {
-  .about-section-1 {
+  .education-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+
+  .skills-section {
+    margin-top: 20px;
+
+    width: 100%;
+    justify-self: center;
+  }
+
+  .tech-title {
+    text-align: left;
+  }
+
+  .tech-skills-container {
+    justify-content: left;
   }
 }
