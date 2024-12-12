@@ -51,18 +51,12 @@ function DeskComponent() {
         {/* Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186) */}
         <image transform="scale(2.0)" href={backgroundColors} />
 
-        <a
-          className="teapot"
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/lydiaritchie/portfolio-website"
-          style={{ cursor: "default" }}
-        >
+       
           <image
             transform="translate(3607 563) scale(1.01)"
             href={vscodeScreenshot}
           />
-        </a>
+
 
         {brewError ? (
           <image transform="translate(3600 1550) scale(1)" href={teapotError} />

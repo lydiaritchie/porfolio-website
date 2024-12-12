@@ -27,7 +27,6 @@ export function Contact() {
           marginTop: "10px",
         }}
       >
-        <h3></h3>
         <p className="mx-4">
           Feel free to reach out or explore my work through the links below!
         </p>
