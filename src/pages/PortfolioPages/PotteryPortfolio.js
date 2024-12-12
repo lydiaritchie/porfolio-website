@@ -50,8 +50,17 @@ function PotteryPortfolio() {
                 <div key={item.id} className="pot-item">
                   <img
                     src={item.image}
+                    srcSet={`
+                      ${item.image} 800w,
+                      ${item.image.replace(/\.([^.]+)$/, "-medium.$1")} 480w,
+                      ${item.image.replace(/\.([^.]+)$/, "-small.$1")} 320w
+                    `}
+                                        sizes="(max-width: 600px) 320px,
+                           (max-width: 1200px) 480px,
+                           800px"
                     alt={item.description}
                     className="pot-image"
+                    loading="lazy"
                     onClick={() => handleImageClick(flatIndex)}
                   />
                 </div>
