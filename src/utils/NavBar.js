@@ -1,4 +1,12 @@
+import React, {useState} from "react";
+
 export function NavBar({ bgColor }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div>
       <nav
@@ -36,12 +44,13 @@ export function NavBar({ bgColor }) {
           aria-controls="smallNavBar"
           aria-expanded="true"
           aria-label="Toggle navigation"
+          onClick={toggleMenu}
           style={{ backgroundColor: "transparent", border: "0px" }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="smallNavBar">
+        <div className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`} id="smallNavBar">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item active">
               <a className="nav-link" href="/">
