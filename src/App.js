@@ -13,7 +13,7 @@ import DesignPortfolio from "./pages/PortfolioPages/DesignPortfolio";
 function App() {
   return (
     <Router>
-      <Routes className="main-container">
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/portfolio/*" element={<Portfolio />}>
           <Route index element={<Navigate to="web-development" replace />} />
@@ -21,8 +21,6 @@ function App() {
           <Route path="design" element={<DesignPortfolio />} />
           <Route path="pottery" element={<PotteryPortfolio />} />
         </Route>
-
-        <Route />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
