@@ -52,10 +52,12 @@ function DeskComponent() {
         {/* Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186) */}
         <image transform="scale(2.0)" href={backgroundColors} />
 
-        <image
-          transform="translate(3607 563) scale(1.01)"
-          href={vscodeScreenshot}
-        />
+
+       
+          <image
+            transform="translate(3607 563) scale(1.01)"
+            href={vscodeScreenshot}
+          />
 
         {brewError ? (
           <image transform="translate(3600 1550) scale(1)" href={teapotError} />

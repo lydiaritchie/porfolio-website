@@ -52,11 +52,13 @@ export function Home() {
               />
 
               <div className="about-intro">
-              My name is Lydia, and I am a full-stack engineer with a strong foundation in graphic design, illustration, video production, and pottery.  My experience is largely project based,
-                I am strongly self driven, and have demonstrated creative
-                problem solving skills. My background in art provides me with a
-                good eye for design and artistic creativity. I was born and
-                raised in Thailand!
+                My name is Lydia, and I am a full-stack engineer with a strong
+                foundation in graphic design, illustration, video production,
+                and pottery. My experience is largely project based, I am
+                strongly self driven, and have demonstrated creative problem
+                solving skills. My background in art provides me with a good eye
+                for design and artistic creativity. I was born and raised in
+                Thailand!
               </div>
             </div>
             {/* ^ End of about-section-1 */}
