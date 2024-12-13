@@ -40,7 +40,9 @@ function PotteryPortfolio() {
     <div>
       {Object.entries(potteryData).map(([category, items]) => (
         <div key={category} className="category-section">
-          <h4 className="heading-italic mt-4">{capitalizeCategory(category)}</h4>
+          <h4 className="heading-italic mt-4">
+            {capitalizeCategory(category)}
+          </h4>
           <div className="pot-container">
             {items.map((item, index) => {
               const flatIndex = allImages.findIndex(
@@ -55,7 +57,7 @@ function PotteryPortfolio() {
                       ${item.image.replace(/\.([^.]+)$/, "-medium.$1")} 480w,
                       ${item.image.replace(/\.([^.]+)$/, "-small.$1")} 320w
                     `}
-                                        sizes="(max-width: 600px) 320px,
+                    sizes="(max-width: 600px) 320px,
                            (max-width: 1200px) 480px,
                            800px"
                     alt={item.description}
@@ -78,7 +80,25 @@ function PotteryPortfolio() {
         dialogClassName="modal-90w"
         className="90w"
       >
+        
         <Modal.Body className="p-0">
+           {/* Close Button */}
+           <button
+            variant="link"
+            onClick={handleClose}
+            style={{
+              position: "absolute",
+              top: "10px",
+              right: "20px",
+              zIndex: 10,
+              color: "#fff",
+              fontSize: "1.5rem",
+              background: "none",
+              border: "none",
+            }}
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
           <Carousel
             activeIndex={activeIndex}
             onSelect={handleCarouselSelect}
