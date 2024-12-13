@@ -16,7 +16,12 @@ export function Home() {
       <header>
         <NavBar bgColor="#8baac2" />
       </header>
-      <div className="main-container mx-0">
+      <div
+        className="main-container mx-0"
+        style={{
+          overflow: "hidden",
+        }}
+      >
         <div
           className="d-flex row justify-content-center name-horizontal"
           style={{ background: "", marginBottom: "-15px", marginTop: "5px" }}
