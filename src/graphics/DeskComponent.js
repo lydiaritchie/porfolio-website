@@ -41,6 +41,7 @@ function DeskComponent() {
         viewBox="0 0 8244.85 4197.96"
         className="desk"
         height="100%"
+        
       >
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="1">
@@ -51,12 +52,12 @@ function DeskComponent() {
         {/* Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186) */}
         <image transform="scale(2.0)" href={backgroundColors} />
 
+
        
           <image
             transform="translate(3607 563) scale(1.01)"
             href={vscodeScreenshot}
           />
-
 
         {brewError ? (
           <image transform="translate(3600 1550) scale(1)" href={teapotError} />

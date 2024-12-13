@@ -16,7 +16,7 @@ export function Home() {
       <header>
         <NavBar bgColor="#8baac2" />
       </header>
-      <div className="main-container">
+      <div className="main-container mx-0">
         <div
           className="d-flex row justify-content-center name-horizontal"
           style={{ background: "", marginBottom: "-15px", marginTop: "5px" }}
@@ -36,7 +36,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className="desk-container">
+        <div className="desk-container mx-0">
           <DeskComponent />
         </div>
 

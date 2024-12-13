@@ -157,8 +157,10 @@ footer {
 }
 
 .skills-section {
-  width: 60%;
-  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .tech-skills-container {
@@ -166,6 +168,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 60%;
 }
 
 .tech-skills {
@@ -179,7 +182,7 @@ footer {
 }
 
 .adobe-icon-container {
-  justify-self: center;
+  text-align: center;
 }
 
 .adobe-icon {
@@ -430,10 +433,11 @@ footer {
   }
 
   .skills-section {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
-
     width: 100%;
-    justify-self: center;
+    align-items: flex-start;
   }
 
   .tech-title {
@@ -442,6 +446,7 @@ footer {
 
   .tech-skills-container {
     justify-content: left;
+    width: 100%;
   }
 
   .adobe-icon-container {
