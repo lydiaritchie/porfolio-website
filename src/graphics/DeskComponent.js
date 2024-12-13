@@ -41,6 +41,7 @@ function DeskComponent() {
         viewBox="0 0 8244.85 4197.96"
         className="desk"
         height="100%"
+        
       >
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="1">
