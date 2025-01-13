@@ -61,7 +61,7 @@ function PotteryPortfolio() {
                            (max-width: 1200px) 480px,
                            800px"
                     alt={item.description}
-                    className="pot-image"
+                    className="pot-image lazy-image"
                     loading="lazy"
                     onClick={() => handleImageClick(flatIndex)}
                   />
