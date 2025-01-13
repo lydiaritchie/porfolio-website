@@ -255,18 +255,21 @@ footer {
 }
 
 .pot-container {
-  column-count: 2;
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
 }
 
 .pot-item {
   break-inside: avoid;
   margin-bottom: 20px;
+  width: 200px;
 }
 
 .pot-image {
-  width: 100%;
-  object-fit: cover;
+  width: 200px;
+  height: 250px;
+  object-fit:cover;
   border-radius: 4px;
 }
 
@@ -278,7 +281,6 @@ footer {
   position: sticky;
   top: 0;
   z-index: 1;
-
   justify-self: center;
   background-color: #8baac2;
 
