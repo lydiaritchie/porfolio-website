@@ -40,9 +40,30 @@ function PotteryPortfolio() {
 
   return (
     <div>
+       <div className="text-center small design-nav">
+        <a
+          className="design-nav-item"
+          href="#vases"
+        >
+          Vases
+        </a>
+         /
+        <a className="design-nav-item" href="#mugs" >
+          Mugs
+        </a>
+        /
+        <a className="design-nav-item" href="#bowls">
+          Bowls
+        </a>
+        /
+        <a className="design-nav-item" href="#additionalWorks">
+          Additional Works
+        </a>
+      </div>
       {Object.entries(potteryData).map(([category, items]) => (
         <div key={category} className="category-section">
-          <h4 className="heading-italic mt-4">
+          <div id={category}></div>
+          <h4 className="heading-italic mt-4" >
             {capitalizeCategory(category)}
           </h4>
           <div className="pot-container">

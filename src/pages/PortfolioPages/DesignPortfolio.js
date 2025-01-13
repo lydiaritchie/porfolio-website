@@ -42,16 +42,18 @@ function DesignPortfolio() {
 
   return (
     <div>
-      <div className=" design-nav">
+      <div className="text-center design-nav">
         <a
           className="design-nav-item"
           href="#illustrations"
         >
           Illustrations
         </a>
+        /
         <a className="design-nav-item" href="#graphics" >
           Graphics
         </a>
+        /
         <a className="design-nav-item" href="#videos">
           Videos
         </a>
