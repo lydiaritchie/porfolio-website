@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Modal, Carousel } from "react-bootstrap";
 import potteryData from "../../utils/data/PotteryData";
 
+
+
 function PotteryPortfolio() {
   const [showModal, setShowModal] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -61,7 +63,7 @@ function PotteryPortfolio() {
                            (max-width: 1200px) 480px,
                            800px"
                     alt={item.description}
-                    className="pot-image lazy-image"
+                    className="pot-image img-fluid"
                     loading="lazy"
                     onClick={() => handleImageClick(flatIndex)}
                   />

@@ -255,21 +255,23 @@ footer {
 }
 
 .pot-container {
-  display: flex;
-  flex-wrap: wrap;
+  column-count: 1;
   column-gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .pot-item {
   break-inside: avoid;
   margin-bottom: 20px;
-  width: 200px;
+  width: 100%;
+
 }
 
 .pot-image {
-  width: 200px;
-  height: 250px;
-  object-fit:cover;
+  width: 100%; /* Make the image responsive by using percentage-based width */
+  height: 100%;
+  object-fit: cover;
   border-radius: 4px;
 }
 
@@ -283,11 +285,10 @@ footer {
   z-index: 1;
   justify-self: center;
   background-color: #8baac2;
-
 }
 
-.design-nav-item{
-  color: #425c77; 
+.design-nav-item {
+  color: #425c77;
   margin: 10px;
   text-decoration: none;
 }
@@ -470,5 +471,4 @@ footer {
   .adobe-icon-container {
     justify-self: left;
   }
-  
 }
