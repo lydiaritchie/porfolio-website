@@ -274,6 +274,22 @@ footer {
   filter: brightness(0.6);
 }
 
+.design-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  justify-self: center;
+  background-color: #8baac2;
+
+}
+
+.design-nav-item{
+  color: #425c77; 
+  margin: 10px;
+  text-decoration: none;
+}
+
 .design-container {
   column-count: 2;
   column-gap: 20px;

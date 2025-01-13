@@ -42,20 +42,17 @@ function DesignPortfolio() {
 
   return (
     <div>
-      <div className="text-center small sticky-top py-2" style={{ color: "#425c77", backgroundColor: "#8baac2"}}>
+      <div className=" design-nav">
         <a
-          className="mx-2"
+          className="design-nav-item"
           href="#illustrations"
-          style={{ textDecoration: "", color: "#425c77" }}
         >
           Illustrations
         </a>
-        -
-        <a className="mx-2" href="#graphics" style={{ textDecoration: "", color: "#425c77" }}>
+        <a className="design-nav-item" href="#graphics" >
           Graphics
         </a>
-        -
-        <a className="mx-2" href="#videos" style={{ textDecoration: "", color: "#425c77" }}>
+        <a className="design-nav-item" href="#videos">
           Videos
         </a>
       </div>
