@@ -4,7 +4,7 @@ import WebDevData from "../../utils/data/WebDevData";
 
 function WebDevPortfolio() {
   return (
-    <div className="main-container   mt-3">
+    <div className="main-container mt-3">
       <div
         className="web-dev-subtitle justify-content-center"
         style={{
