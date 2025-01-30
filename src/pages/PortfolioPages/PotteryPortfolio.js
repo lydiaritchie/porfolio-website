@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Modal, Carousel } from "react-bootstrap";
 import potteryData from "../../utils/data/PotteryData";
 
+
+
 function PotteryPortfolio() {
   const [showModal, setShowModal] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -38,9 +40,30 @@ function PotteryPortfolio() {
 
   return (
     <div>
+       <div className="text-center small design-nav">
+        <a
+          className="design-nav-item"
+          href="#vases"
+        >
+          Vases
+        </a>
+         /
+        <a className="design-nav-item" href="#mugs" >
+          Mugs
+        </a>
+        /
+        <a className="design-nav-item" href="#bowls">
+          Bowls
+        </a>
+        /
+        <a className="design-nav-item" href="#additionalWorks">
+          Additional Works
+        </a>
+      </div>
       {Object.entries(potteryData).map(([category, items]) => (
         <div key={category} className="category-section">
-          <h4 className="heading-italic mt-4">
+          <div id={category}></div>
+          <h4 className="heading-italic mt-4" >
             {capitalizeCategory(category)}
           </h4>
           <div className="pot-container">
@@ -61,7 +84,7 @@ function PotteryPortfolio() {
                            (max-width: 1200px) 480px,
                            800px"
                     alt={item.description}
-                    className="pot-image"
+                    className="pot-image img-fluid"
                     loading="lazy"
                     onClick={() => handleImageClick(flatIndex)}
                   />

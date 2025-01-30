@@ -42,10 +42,26 @@ function DesignPortfolio() {
 
   return (
     <div>
+      <div className="text-center design-nav">
+        <a
+          className="design-nav-item"
+          href="#illustrations"
+        >
+          Illustrations
+        </a>
+        /
+        <a className="design-nav-item" href="#graphics" >
+          Graphics
+        </a>
+        /
+        <a className="design-nav-item" href="#videos">
+          Videos
+        </a>
+      </div>
       <div>
         {Object.entries(designData).map(([category, items]) => (
           <div key={category} className="category-section">
-            <h4 className="heading-italic mt-4 mb-2">
+            <h4 className="heading-italic mt-4 mb-2" id={category}>
               {capitalizeCategory(category)}
             </h4>
             <div className="design-container">
@@ -63,24 +79,24 @@ function DesignPortfolio() {
                     }}
                   >
                     <img
-  src={item.image}
-  srcSet={`
+                      src={item.image}
+                      srcSet={`
     ${item.image} 800w,
-    ${item.image.replace(/\.([^.]+)$/, '-medium.$1')} 480w,
-    ${item.image.replace(/\.([^.]+)$/, '-small.$1')} 320w
+    ${item.image.replace(/\.([^.]+)$/, "-medium.$1")} 480w,
+    ${item.image.replace(/\.([^.]+)$/, "-small.$1")} 320w
   `}
-  sizes="(max-width: 600px) 320px,
+                      sizes="(max-width: 600px) 320px,
          (max-width: 1200px) 480px,
          800px"
-  alt={item.description}
-  className="design-img"
-  onClick={() => handleImageClick(flatIndex)}
-  style={{
-    transform: `scale(${item.scale})`,
-    width: "100%",
-    display: "block",
-  }}
-/>
+                      alt={item.description}
+                      className="design-img"
+                      onClick={() => handleImageClick(flatIndex)}
+                      style={{
+                        transform: `scale(${item.scale})`,
+                        width: "100%",
+                        display: "block",
+                      }}
+                    />
                   </div>
                 );
               })}
@@ -140,7 +156,9 @@ function DesignPortfolio() {
       </div>
 
       <div className="mt-4">
-        <h4 className="heading-italic">Video Production</h4>
+        <h4 className="heading-italic" id="videos">
+          Video Production
+        </h4>
         <div className="mb-3 caption">
           Serving as the complete media production team, I developed, filmed,
           and edited these projects. Select archival B-roll complemented my
