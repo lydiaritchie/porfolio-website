@@ -38,8 +38,8 @@ export function NavBar({ bgColor }) {
               </a>
             </li>
             <li className="nav-item px-4">
-              <a className="nav-link" href="/contact">
-                Contact
+              <a className="nav-link" href="/about">
+                About
               </a>
             </li>
           </ul>
